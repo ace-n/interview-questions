@@ -10,7 +10,7 @@
 9=(Gotcha) What is the at-best worst-case search of a tree?
 10=(Trivia) What is the height balance of a node?
 11=When is a tree height balanced?
-12=What is the time complexity of inserting a node into a tree? (for AVL trees, this doesn�t include balancing)
+12=What is the time complexity of inserting a node into a tree? (for AVL trees, this doesn't include balancing)
 13=What is the basic algorithm used to insert nodes (for trees in general)?
 14=What is a full tree?
 15=What is a complete tree?
@@ -92,7 +92,7 @@
 14=What are the three methods of building heaps?
 15=Out of the three heap building methods, which one is the fastest? How fast is it?
 16=How does heapsort work?
-17=What are heapsort�s performance characteristics?
+17=What are heapsort's performance characteristics?
 
 [disjoint sets]
 1=In a (collection of) disjoint set(s), how many sets must a member be in?
@@ -104,7 +104,7 @@
 7=Why do we have to provide union() with representative values (as opposed to any old value from the set)?
 8=What are the three operations that the disjoint set ADT supports?
 9=What does makeSet(elem) do?
-10=What are the performance characteristics of a disjoint set ADT using a mapping of keys/indices to representative values (the �naive implementation�)?
+10=What are the performance characteristics of a disjoint set ADT using a mapping of keys/indices to representative values (the 'naive implementation')?
 11=What are the performance characteristics of a disjoint set ADT using an uptree and NO other optimizations?
 12=What are the performance characteristics of a disjoint set ADT using an OPTIMIZED (smart unions + path compression) uptree?
 13=How can we store data at the roots/representative values of uptrees in an array-based implementation? What class of techniques require this?
@@ -159,9 +159,9 @@
 36=How do we break ties in MST algorithms?
 37=Summarize Kruskal's algorithm.
 38=What is the time complexity of Kruskal's algorithm for each PQ variant?
-39=Summarize Prim�s algorithm.
-40=When using Prim�s algorithm on a sparse graph, what graph/priority queue implementations should be used?
-41=When using Prim�s algorithm on a dense graph, what graph/priority queue implementations should be used?
+39=Summarize Prim's algorithm.
+40=When using Prim's algorithm on a sparse graph, what graph/priority queue implementations should be used?
+41=When using Prim's algorithm on a dense graph, what graph/priority queue implementations should be used?
 42=What is the time complexity of Prim's algorithm when using a heap and an adjacency list?
 43=What is the time complexity of Prim's algorithm when using a heap and an adjacency matrix?
 44=What is the time complexity of Prim's algorithm when using an unsorted array as the priority queue?
@@ -169,7 +169,7 @@
 46=When storing directed graphs in an adjacency matrix, what is the convention regarding rows and columns?
 47=What is the single-source shortest path problem?
 48=When does no single-source shortest path exist in a graph?
-49=How does Djikstra�s algorithm differ from Prim�s algorithm?
+49=How does Djikstra's algorithm differ from Prim's algorithm?
 50=Is Djikstra's algorithm safe for use with negative edges?
 51=In Djikstra's algorithm, when can we stop considering a node?
 
@@ -201,7 +201,7 @@
 14=What are the three methods of building heaps?
 15=Out of the three heap building methods, which one is the fastest? How fast is it?
 16=How does heapsort work?
-17=What are heapsort�s performance characteristics?
+17=What are heapsort's performance characteristics?
 
 [disjoint sets]
 1=In a (collection of) disjoint set(s), how many sets must a member be in?
@@ -213,7 +213,7 @@
 7=Why do we have to provide union() with representative values (as opposed to any old value from the set)?
 8=What are the three operations that the disjoint set ADT supports?
 9=What does makeSet(elem) do?
-10=What are the performance characteristics of a disjoint set ADT using a mapping of keys/indices to representative values (the �naive implementation�)?
+10=What are the performance characteristics of a disjoint set ADT using a mapping of keys/indices to representative values (the 'naive implementation?)?
 11=What are the performance characteristics of a disjoint set ADT using an uptree and NO other optimizations?
 12=What are the performance characteristics of a disjoint set ADT using an OPTIMIZED (smart unions + path compression) uptree?
 13=How can we store data at the roots/representative values of uptrees in an array-based implementation? What class of techniques require this?
@@ -268,9 +268,9 @@
 36=How do we break ties in MST algorithms?
 37=Summarize Kruskal's algorithm.
 38=What is the time complexity of Kruskal's algorithm for each PQ variant?
-39=Summarize Prim�s algorithm.
-40=When using Prim�s algorithm on a sparse graph, what graph/priority queue implementations should be used?
-41=When using Prim�s algorithm on a dense graph, what graph/priority queue implementations should be used?
+39=Summarize Prim's algorithm.
+40=When using Prim's algorithm on a sparse graph, what graph/priority queue implementations should be used?
+41=When using Prim's algorithm on a dense graph, what graph/priority queue implementations should be used?
 42=What is the time complexity of Prim's algorithm when using a heap and an adjacency list?
 43=What is the time complexity of Prim's algorithm when using a heap and an adjacency matrix?
 44=What is the time complexity of Prim's algorithm when using an unsorted array as the priority queue?
@@ -278,6 +278,6 @@
 46=When storing directed graphs in an adjacency matrix, what is the convention regarding rows and columns?
 47=What is the single-source shortest path problem?
 48=When does no single-source shortest path exist in a graph?
-49=How does Djikstra�s algorithm differ from Prim�s algorithm?
+49=How does Djikstra's algorithm differ from Prim's algorithm?
 50=Is Djikstra's algorithm safe for use with negative edges?
-51=In Djikstra�s algorithm, when can we stop considering a node?
+51=In Djikstra's algorithm, when can we stop considering a node?
