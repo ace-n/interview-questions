@@ -1,0 +1,283 @@
+[trees_intro]
+1A=faster. less memory footprint, common operations are (amortized) constant time
+2A=LIFO; FIFO
+3A=push to one stack and use the other to reverse the order of the first�s elements when popping
+4A=it has a root node
+5A=its edges only go one way
+6A=the order in which children of a vertex are listed matters
+7A=the (length of the) longest path from a leaf to the node
+8A=-1; 0
+9A=O(h) // O(log n) is WRONG, since the tree isn�t necessarily balanced
+10A=height(leftSubtree) - height(rightSubtree)
+11A=if |height balance| for every node in the tree is <= 1
+12A=O(h)
+13A=search for the inserted node in the tree and change that spot to the inserted node
+14A=An n-ary tree whose non-leaf nodes have n children
+15A=a tree that is perfect except for its lowest level, which can be missing nodes on its right (but can�t have gaps between nodes)
+16A=a full tree whose leaves are all at the same level
+17A=IGNORE
+18A=n^(h+1) - 1
+19A=all of them
+20A=its leaves could be on different levels
+21A=an ADT where values are accessible by keys
+22A=O(n)
+23A=3
+24A=preorder, inorder, postorder, level-order
+25A=a traversal of nodes ordered by their level in a tree
+26A=dequeue node, yell it, enqueue its children
+
+[binarytrees]
+1A=a tree whose nodes have at most two children
+2A=n+1
+3A=a binary tree where the inorder traversal of the tree produces a sorted output
+4A=delete the node and set any pointers to it to its child�s value (which is NULL for no-child removes)
+5A= pick the IOP or IOS of the root node, swap the two, and delete the (old) root node; the value of the new root
+6A=we have to shift elements to the right // WRONG answer: we need to expand the array
+
+[btrees]
+1A=2 <= keys <= m - 1
+2A=m/2 <= children <= m
+3A=0 OR 2 <= children <= m
+4A=m
+5A=when reading data from disk; because disk reads are very slow
+6A=O(log base 2 of n)
+7A=O(m * log base m of n)
+8A=they attempt to minimize the height of a tree, which makes searches faster
+
+[avltrees]
+1A=operations that rebalance an AVL tree when it becomes height unbalanced; O(1) time
+2A=sticks; boomerangs
+3A=the lowest height-unbalanced node (on the path to the root) always triggers the rotation
+4A=the lighter side
+5A=N's heaviest child; N
+6A=we follow the heaviest child
+7A=insert at proper place; fix imbalances; update heights
+
+[hashing]
+1A=hash function, compression function
+2A=converts keys to integers
+3A=converts integers to array indices
+4A=constant time (or O(1))
+5A=if x == y, then hash(x) must == hash(y) for all x,y
+6A=hash functions must be deterministic, hash functions must evenly distribute data throughout a hash table (to minimize collisions)
+7A=when we know our (small) keyspace and our distribution
+8A=no collisions, can accept any key from its desired keyspace
+9A=hash keyspace size / (storage) slots available to hash function
+10A=1; log n
+11A=2
+12A=flag bucket slots as never, currently, or previously used
+13A=having chunks of used/unused bucket slots; double hashing
+14A=determining step size from key values
+15A=constant load factor
+16A=0.7; resize array to a (usually cached) prime number > 2*current size and "rehash" the data into its appropriate buckets
+17A=when the size of the underlying array is changed, the proper positions of its elements may too and need to be recalculated
+18A=probe-based - faster overall, separate chaining - better with large keys
+19A=hash tables
+20A=hashes to a slot and continues through array at a certain step size until an empty slot is found
+
+[priority queue + heaps]
+1A=comparable items (items must have an < operator)
+2A=O(1) insert, O(n) remove
+3A=O(1) insert, O(n) remove
+4A=O(n) insert, O(1) remove
+5A=complete binary tree whose nodes (in/de)crease as level increases
+6A=yes
+7A=makes our math nicer
+8A=2n; 2n + 1; floor(n/2)
+9A=O(lg n)
+10A=insert a value as a child of a leaf, then heapify it up
+11A=shift a value up/down in the tree until the heap is once again valid
+12A=O(1) insert, O(n) remove
+13A=set root to rightmost leaf, heapifyDown from root, return original root
+14A=sort data, repeated insertion, heapifyDown the first 1/2 of underlying array
+15A=heapifyDown the first half of the underlying array; O(n)
+16A=continually remove and store min from a heap of (to-be-sorted) data
+17A=O(n lg n) time, O(1) space
+
+[disjoint sets]
+1A=1
+2A=one of their members (the representative value)
+3A=must be the same for all elements in the set
+4A=returns the representative of n
+5A=no; we only care about whether two elements are in the same set
+6A=combines two sets given their representatives a and b
+7A=some implementations (i.e. uptrees) require union() to use representative elements
+8A=makeSet, union, find
+9A=makes a set containing only elem
+10A=O(1) find, O(n) union
+11A=O(n) find, O(1) union
+12A=O(lg* n) ~ O(1) find, O(1) union
+13A=roots have negative values, which indicate that they are roots; smart unions
+14A=heights can be 0 which is also a possible key; no
+15A=their representative value
+16A=follows representative node indexes until it hits < 0
+17A=O(h); O(n)
+18A=O(1)
+19A=minimize overall height increase across all nodes
+20A=union by {height, size, rank}
+21A=rank(node) = height(node) + 1
+22A=h = O(lg n)
+23A=any node hit in find() is pointed directly at its representative
+24A=finds on compressed nodes are O(1); it doesn�t change time complexity of find()
+
+[graphs]
+1A=sets of vertices and edges
+2A=each edge only goes one way, edges' start/end nodes matter
+3A=minimize conflict given a conflict graph; NP
+4A=number of edges touching N
+5A=a sequence of vertices in a graph connected by edges between them
+6A=number of edges (*not* nodes) in a path
+7A=graph with no self-loops or multi-edges (pairs of nodes with multiple edges between them)
+8A= a connected subgraph containing as many nodes as it can (based on its parent graph)
+9A=acyclic connected subgraph containing all vertices of its parent graph
+10A=isConnected ? n-1 : 0
+11A=isSimple ? n(n-1)/2 : infinity
+12A=vertices, edges, optional data on vertices and/or edges
+13A=edge list, adjacency list, adjacency matrix
+14A=small integers
+15A=stores the edges and the vertices in separate arrays with no relation between indices used for each object
+16A=as a 2-d array/dictionary of values indicating the status of an edge between two nodes
+17A=4 times bigger
+18A=O(1) insertion, O(m) removal
+19A=IGNORE
+20A=O(n) insertion/removal
+21A=stores the graph as a dictionary of nodes and pointers to their edges and an edge list
+22A=O(1) insertion, O(deg(V)) removal
+23A=IGNORE
+24A=traversals cannot travel across nonexistent edges; we usually want data about graph�s structure
+25A=get/set label ops are O(1)
+26A=queue; stack
+27A=o(n+m)
+28A=o(n^2)
+29A=discovery, cross
+30A=an edge leading to an unvisited vertex
+31A=an edge leading to an already-visited vertex
+32A=they form a spanning tree 
+33A=IGNORE
+34A=a minimum total weight spanning tree
+35A=O(m)
+36A=it doesn't matter!
+37A=iteratively mark (as MST) the shortest n-1 edges that don't create cycles
+38A=O(n + m lg n) for the two relevant PQ variants
+39A=mark the lowest-weight unmarked edges between a visited and unvisited node until no longer possible
+40A=heap + adjacency list
+41A=unsorted array + either adj. matrix or adj. list
+42A=O((n + m) log n)
+43A=O(n^2 + m log n)
+44A=O(n^2)
+45A=m is O(n)
+46A=rows = origin, columns = destination
+47A=minimize the cost between a given point A to every other vertex B
+48A=when it has negative cycles
+49A=use minimum path length from start node instead of minimum edge length
+50A=no
+51A=when we have explored all its edges
+
+[Hashing]
+1A=hashes to a slot and continues through array at a certain step size until an empty slot is found
+2A=flag bucket slots as never, currently, or previously used
+3A=having chunks of used/unused bucket slots; double hashing
+4A=determining step size from key values
+5A=constant load factor
+6A=0.7; resize array to a (usually cached) prime number > 2*current size and "rehash" the data into its appropriate buckets
+7A=when the size of the underlying array is changed, the proper positions of its elements may too and need to be recalculated
+8A=probe-based - faster overall, separate chaining - better with large keys
+9A=hash tables
+
+[priority queue + heaps]
+1A=comparable items (items must have an < operator)
+2A=O(1) insert, O(n) remove
+3A=O(1) insert, O(n) remove
+4A=O(n) insert, O(1) remove
+5A=complete binary tree whose nodes (in/de)crease as level increases
+6A=yes
+7A=makes our math nicer
+8A=2n; 2n + 1; floor(n/2)
+9A=O(lg n)
+10A=insert a value as a child of a leaf, then heapify it up
+11A=shift a value up/down in the tree until the heap is once again valid
+12A=O(1) insert, O(n) remove
+13A=set root to rightmost leaf, heapifyDown from root, return original root
+14A=sort data, repeated insertion, heapifyDown the first 1/2 of underlying array
+15A=heapifyDown the first half of the underlying array; O(n)
+16A=continually remove and store min from a heap of (to-be-sorted) data
+17A=O(n lg n) time, O(1) space
+
+[disjoint sets]
+1A=1
+2A=one of their members (the representative value)
+3A=must be the same for all elements in the set
+4A=returns the representative of n
+5A=no; we only care about whether two elements are in the same set
+6A=combines two sets given their representatives a and b
+7A=some implementations (i.e. uptrees) require union() to use representative elements
+8A=makeSet, union, find
+9A=makes a set containing only elem
+10A=O(1) find, O(n) union
+11A=O(n) find, O(1) union
+12A=O(lg* n) ~ O(1) find, O(1) union
+13A=roots have negative values, which indicate that they are roots; smart unions
+14A=heights can be 0 which is also a possible key; no
+15A=their representative value
+16A=follows representative node indexes until it hits < 0
+17A=O(h); O(n)
+18A=O(1)
+19A=minimize overall height increase across all nodes
+20A=union by {height, size, rank}
+21A=rank(node) = height(node) + 1
+22A=h = O(lg n)
+23A=any node hit in find() is pointed directly at its representative
+24A=finds on compressed nodes are O(1); it doesn�t change time complexity of find()
+
+[graphs]
+1A=sets of vertices and edges
+2A=each edge only goes one way, edges' start/end nodes matter
+3A=minimize conflict given a conflict graph; NP
+4A=number of edges touching N
+5A=a sequence of vertices in a graph connected by edges between them
+6A=number of edges (*not* nodes) in a path
+7A=graph with no self-loops or multi-edges (pairs of nodes with multiple edges between them)
+8A= a connected subgraph containing as many nodes as it can (based on its parent graph)
+9A=acyclic connected subgraph containing all vertices of its parent graph
+10A=isConnected ? n-1 : 0
+11A=isSimple ? n(n-1)/2 : infinity
+12A=vertices, edges, optional data on vertices and/or edges
+13A=edge list, adjacency list, adjacency matrix
+14A=small integers
+15A=stores the edges and the vertices in separate arrays with no relation between indices used for each object
+16A=as a 2-d array/dictionary of values indicating the status of an edge between two nodes
+17A=4 times bigger
+18A=O(1) insertion, O(m) removal
+19A=IGNORE
+20A=O(n) insertion/removal
+21A=stores the graph as a dictionary of nodes and pointers to their edges and an edge list
+22A=O(1) insertion, O(deg(V)) removal
+23A=IGNORE
+24A=traversals cannot travel across nonexistent edges; we usually want data about graph�s structure
+25A=get/set label ops are O(1)
+26A=queue; stack
+27A=o(n+m)
+28A=o(n^2)
+29A=discovery, cross
+30A=an edge leading to an unvisited vertex
+31A=an edge leading to an already-visited vertex
+32A=they form a spanning tree 
+33A=IGNORE
+34A=a minimum total weight spanning tree
+35A=O(m)
+36A=it doesn't matter!
+37A=iteratively mark (as MST) the shortest n-1 edges that don't create cycles
+38A=O(n + m lg n) for the two relevant PQ variants
+39A=mark the lowest-weight unmarked edges between a visited and unvisited node until no longer possible
+40A=heap + adjacency list
+41A=unsorted array + either adj. matrix or adj. list
+42A=O((n + m) log n)
+43A=O(n^2 + m log n)
+44A=O(n^2)
+45A=m is O(n)
+46A=rows = origin, columns = destination
+47A=minimize the cost between a given point A to every other vertex B
+48A=when it has negative cycles
+49A=use minimum path length from start node instead of minimum edge length
+50A=no
+51A=when we have explored all its edges
