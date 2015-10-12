@@ -10,7 +10,7 @@
 9=(Gotcha) What is the at-best worst-case search of a tree?
 10=(Trivia) What is the height balance of a node?
 11=When is a tree height balanced?
-12=What is the time complexity of inserting a node into a tree? (for AVL trees, this doesn�t include balancing)
+12=What is the time complexity of inserting a node into a tree? (for AVL trees, this doesn't include balancing)
 13=What is the basic algorithm used to insert nodes (for trees in general)?
 14=What is a full tree?
 15=What is a complete tree?
@@ -92,7 +92,7 @@
 14=What are the three methods of building heaps?
 15=Out of the three heap building methods, which one is the fastest? How fast is it?
 16=How does heapsort work?
-17=What are heapsort�s performance characteristics?
+17=What are heapsort's performance characteristics?
 
 [disjoint sets]
 1=In a (collection of) disjoint set(s), how many sets must a member be in?
@@ -104,7 +104,7 @@
 7=Why do we have to provide union() with representative values (as opposed to any old value from the set)?
 8=What are the three operations that the disjoint set ADT supports?
 9=What does makeSet(elem) do?
-10=What are the performance characteristics of a disjoint set ADT using a mapping of keys/indices to representative values (the �naive implementation�)?
+10=What are the performance characteristics of a disjoint set ADT using a mapping of keys/indices to representative values (the 'naive implementation')?
 11=What are the performance characteristics of a disjoint set ADT using an uptree and NO other optimizations?
 12=What are the performance characteristics of a disjoint set ADT using an OPTIMIZED (smart unions + path compression) uptree?
 13=How can we store data at the roots/representative values of uptrees in an array-based implementation? What class of techniques require this?
@@ -159,9 +159,9 @@
 36=How do we break ties in MST algorithms?
 37=Summarize Kruskal's algorithm.
 38=What is the time complexity of Kruskal's algorithm for each PQ variant?
-39=Summarize Prim�s algorithm.
-40=When using Prim�s algorithm on a sparse graph, what graph/priority queue implementations should be used?
-41=When using Prim�s algorithm on a dense graph, what graph/priority queue implementations should be used?
+39=Summarize Prim's algorithm.
+40=When using Prim's algorithm on a sparse graph, what graph/priority queue implementations should be used?
+41=When using Prim's algorithm on a dense graph, what graph/priority queue implementations should be used?
 42=What is the time complexity of Prim's algorithm when using a heap and an adjacency list?
 43=What is the time complexity of Prim's algorithm when using a heap and an adjacency matrix?
 44=What is the time complexity of Prim's algorithm when using an unsorted array as the priority queue?
@@ -169,11 +169,11 @@
 46=When storing directed graphs in an adjacency matrix, what is the convention regarding rows and columns?
 47=What is the single-source shortest path problem?
 48=When does no single-source shortest path exist in a graph?
-49=How does Djikstra�s algorithm differ from Prim�s algorithm?
+49=How does Djikstra's algorithm differ from Prim's algorithm?
 50=Is Djikstra's algorithm safe for use with negative edges?
 51=In Djikstra's algorithm, when can we stop considering a node?
 
-[Hashing]
+[Hashing2]
 1=How does linear probing resolve collisions?
 2=When using linear probing, what is one way to prevent unnecessary probing?
 3=What is primary clustering, and how is it solved (just give the vocabulary word)?
@@ -183,101 +183,3 @@
 7=What is rehashing?
 8=What are the advantages of each of the two collision resolution strategies over the other?
 9=What technique do dictionaries usually use?
-
-[priority queue + heaps]
-1=What items can a priority queue hold? (Hint: not spaceships!)
-2=When using an unsorted array, how fast are the two main priority queue operations (insert/remove)?
-3=When using an unsorted linked list, how fast are the two main priority queue operations (insert/remove)?
-4=When using a sorted array/linked list, how fast are the two main priority queue operations (insert/remove)?
-5=What is the definition of a heap?
-6=Is an empty tree a heap?
-7=In the array-based implementation of a heap, why do we usually start the heap at 1 and not 0?
-8=For an array-based heap starting at 1, what are the leftChild, rightChild, and parent indices given an index n (in that order)?
-9=What is the height of a heap in relation to the amount of data it contains?
-10=How do we insert something into a heap?
-11=What is the process of heapifying?
-12=When using an unsorted linked list, how fast are the two main priority queue operations (insert/remove)?
-13=What is the algorithm for removeMin() in a heap?
-14=What are the three methods of building heaps?
-15=Out of the three heap building methods, which one is the fastest? How fast is it?
-16=How does heapsort work?
-17=What are heapsort�s performance characteristics?
-
-[disjoint sets]
-1=In a (collection of) disjoint set(s), how many sets must a member be in?
-2=In a disjoint set, what are sets represented by?
-3=What requirement does the representative value have to adhere to?
-4=What does find(n) do?
-5=Does the representative of a disjoint set have to be any particular value? Why (not)?
-6=What does union(a,b) do?
-7=Why do we have to provide union() with representative values (as opposed to any old value from the set)?
-8=What are the three operations that the disjoint set ADT supports?
-9=What does makeSet(elem) do?
-10=What are the performance characteristics of a disjoint set ADT using a mapping of keys/indices to representative values (the �naive implementation�)?
-11=What are the performance characteristics of a disjoint set ADT using an uptree and NO other optimizations?
-12=What are the performance characteristics of a disjoint set ADT using an OPTIMIZED (smart unions + path compression) uptree?
-13=How can we store data at the roots/representative values of uptrees in an array-based implementation? What class of techniques require this?
-14=For union by height, why can't we just store "-height" in the array for each root? Does this issue exist in either of the other smart union strategies?
-15=In an uptree, what do non-root indices store?
-16=What is the algorithm for find() in an uptree?
-17=What is the time complexity of find() in an uptree? in a worst-case uptree?
-18=What is the time complexity of union() in an uptree if it is provided with already representative values?
-19=In an uptree, what do smart unions attempt to do?
-20=What are the three types of smart unions?
-21=(Reminder) What is the rank of a node?
-22=If an uptree uses smart unions, what do we know must be true about the uptree?
-23=What is path compression?
-24=Why is path compression useful? (Two reasons)
-
-[graphs]
-1=What are graphs (the simplest definition)?
-2=What is different about a directed graph vs. a non-directed graph?
-3=What is the vertex cover problem, and what complexity class is it in?
-4=What is the degree of a node N?
-5=What is a path?
-6=What is the length of a path? What is it *not*?
-7=What is a simple graph?
-8=What is a connected component?
-9=What is a spanning tree?
-10=What is the MINIMUM number of edges a graph of n nodes can have?
-11=What is the MAXIMUM number of edges a graph of n nodes can have?
-12=What three things need to be stored for a graph ADT?
-13=What are the three implementations of a graph ADT?
-14=When storing graphs in arrays, what should the vertex/edge 'names' be?
-15=How does an edge list store a graph?
-16=How does an adjacency matrix store a graph?
-17=When an adjacency matrix expands, how much bigger does it become?
-18=What are the efficiencies of insert/remove for a graph ADT based on an edge list?
-19=IGNORE
-20=What are the efficiencies of insert/remove for a graph ADT based on an adjacency matrix?
-21=How does an adjacency list store a graph?
-22=What are the efficiencies of insert/remove for a graph ADT based on an adjacency list?
-23=IGNORE
-24=What does it mean to say that traversals must honor the graph's connectivity? Why is this important?
-25=What are the key implementation assumptions when doing BFS and DFS?
-26=Does BFS use a stack or a queue? DFS?
-27=When using a graph based on an adjacency list, what is the time complexity of DFS/BFS?
-28=When using a graph based on an adjacency matrix, what is the time complexity of DFS/BFS?
-29=What are the two types of edge labels used when labeling a DFS (just name them)?
-30=What is a discovery edge?
-31=What is a cross edge?
-32=What is special about discovery edges (vs. any old edge)?
-33=IGNORE
-34=What is a minimum spanning tree (MST)?
-35=What is the time complexity of most MST algorithms?
-36=How do we break ties in MST algorithms?
-37=Summarize Kruskal's algorithm.
-38=What is the time complexity of Kruskal's algorithm for each PQ variant?
-39=Summarize Prim�s algorithm.
-40=When using Prim�s algorithm on a sparse graph, what graph/priority queue implementations should be used?
-41=When using Prim�s algorithm on a dense graph, what graph/priority queue implementations should be used?
-42=What is the time complexity of Prim's algorithm when using a heap and an adjacency list?
-43=What is the time complexity of Prim's algorithm when using a heap and an adjacency matrix?
-44=What is the time complexity of Prim's algorithm when using an unsorted array as the priority queue?
-45=According to CS225, what makes a graph sparse?
-46=When storing directed graphs in an adjacency matrix, what is the convention regarding rows and columns?
-47=What is the single-source shortest path problem?
-48=When does no single-source shortest path exist in a graph?
-49=How does Djikstra�s algorithm differ from Prim�s algorithm?
-50=Is Djikstra's algorithm safe for use with negative edges?
-51=In Djikstra�s algorithm, when can we stop considering a node?
