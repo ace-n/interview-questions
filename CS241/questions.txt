@@ -1,0 +1,492 @@
+[quiz2]
+1=What does close(1); open("file") do?
+2=What does the following program do and how does it work?
+3=What does the child inherit from the parent? What does it not?
+4=How do I wait for my child to finish?
+5=Can I find out the exit value of my child?
+6=How do I start a background process? (Hint: BF4's Active Radar)
+7=What would be effect of too many zombies?
+8=What does the system do to help prevent zombies?
+9=What are 'zombies'?
+10=How do we kill zombies?
+11=How do I send signals programmatically to a process?
+12=How do I send a user-defined signal? Terminate signal?
+13=Why should I use the signal symbols not the constants?
+14=What happens if malloc fails?
+15=What does typedef int foo do? What is this especially useful for?
+16=Variables declared outside of functions are _________ and _________?
+17=What is a major gotcha with ctime()?
+18=What is the sizeof() of type[]?
+
+[quiz3]
+1=Can a new thread join on the original main thread?
+2=What is external fragmentation?
+3=What is internal fragmentation?
+4=What is fragmentation and why is it a problem?
+5=How does a best-fit memory policy allocate memory
+6=How does a worst-fit memory policy allocate memory
+7=How does a first-fit memory policy allocate memory
+8=What are differences between malloc/realloc/calloc? Spot errors in using them.
+9=What would c/m/re-alloc do if it cannot satisfy the memory allocation request?
+10=What does sbrk do and why?
+11=Do pthreads share stack(s)?
+12=Do pthreads share heap(s)?
+13=What does sbrk() do to ensure OS security?
+14=Is there anything wrong with �realloc(array, (size ^ 2) * SZ_OF_ELEM)�?
+15=What are explicit free lists?
+16=What do boundary tags indicate? Why is this information useful?
+17=What are implicit free lists?
+18=In implicit free lists, where is free state stored? Why can we do this?
+19=What is a segregated free list?
+20=What is a buddy allocator?
+21=What are the pros/cons of buddy allocators?
+22=How can boundary tags be hacked?
+23=What prevents me from reading someone else�s memory (i.e. what sends me the SIGSEGV)?
+24=What are pages?
+25=How can we communicate with other pthreads?
+26=What is pthread_join()?
+27=What is pthread_exit() the same as?
+28=What happens if we have too many stacks?
+29=What happens if we have too many heaps?
+30=What is the hierarchichal structure of pthreads?
+31=What does pthread_cancel() do?
+32=Why do we usually avoid pthread_cancel()?
+33=What is the primary difference between returning and pthread_exit�ing?
+34=When does pthread_exit() terminate a program?
+35=When does return terminate a program
+36=What happens if we don�t join on pthreads?
+37=What happens if two threads try to pthread_join another one?
+38=How do we protect against thread-unsafe constructs in C?
+39=Is using strtok()/asctime()/etc. in multiple threads dangerous? If so, why?
+40=What function do we use to create a pthread?
+41=Can threads share heap variables (assuming they exist)?
+42=Can threads share stack variables (assuming they exist)?
+43=What are the pros/cons of threads vs. processes?
+44=What does exit() effectively do?
+45=What happens when we fork a process with multiple threads?
+46=What are the arguments to pthread_create? (IN ORDER!)
+47=What is a common gotcha when using pthread_create?
+48=What are the 4 ways a thread can be terminated?
+49=What does it mean if pthread_create throws error EAGAIN?
+50=Which is faster, creating a thread or a process?
+51=What happens if two threads try to pthread_join() each other?
+52=What does SIGALRM do by default?
+53=What happens if 2 threads join the same other thread?
+
+[quiz4-part1]
+1=What is a Critical Section?
+2=Does merely incrementing a variable create a critical section?
+3=How do I prevent multiple threads from entering a critical section?
+4=What is pthread_mutex_destroy() used for?
+5=What happens when you do illogical things with pthread_mutex'es? (e.g. destroying a destroyed mutex)
+6=If a mutex is locked, which threads does it stop?
+7=What is PTHREAD_MUTEX_INITIALIZER?
+8=What's the difference between PTHREAD_MUTEX_INITIALIZER and pthread_mutex_init()?
+9=What happens to mutexes when fork()-ing? What's the gotcha?
+10=If thread T locks a mutex, who can unlock it?
+11=Can we use multiple mutex locks? If so, how are they commonly split up?
+12=What should we watch out for when using multiple mutex locks?
+13=Is there any overhead in calling pthread_mutex_lock()/unlock()?
+14=What is a counting semaphore?
+15=What two operations does a counting semaphore support?
+16=What does sem_wait() do?
+17=What does sem_post() do?
+18=A counting semaphore keeps track of what?
+19=What is the minimum "count" value of a counting semaphore (ever, not just on init)?
+20=What kind of semaphores does CS241 use? What popular OS doesn't support them?
+21=Can I call sem_wait() and sem_post() from DIFFERENT threads on the SAME semaphore?
+22=Why do we use mutexes instead of 1-count semaphores?
+23=Can we use semaphores inside a signal handler? If so, why is this useful?
+24=Is using signal() in a multithreaded program a good idea? If not, what do we use instead?
+25=What does double-locking do to a mutex of type PTHREAD_MUTEX_NORMAL?
+26=What does double-locking do to a mutex of type PTHREAD_MUTEX_DEFAULT?
+27=What does a mutex of type PTHREAD_MUTEX_RECURSIVE resemble?
+
+[quiz4-part2]
+1=What does pthread_mutex_trylock() do?
+2=What happens when a thread waiting for a mutex is signalled?
+3=What does it mean if the second argument of sem_init() is 0? Non-0?
+4=What happens if we initialize an already-initialized semaphore?
+5=In general, what happens to a semaphore's "count" value if a semaphore function fails?
+6=What does sem_trywait() do?
+7=What makes an operation atomic?
+8=What restrictions exist when making a copy of a pthread_mutex_t?
+9=What is the pthread equivalent of sleep? Why do we use it?
+10=What are the desired properties of solutions to the Critical Section Problem?
+11=What is the meaning of "bounded wait"?
+12=What is the meaning of "progress"?
+13=What is Petersen's solution?
+14=What is Dekker's solution?
+15=Why is it a bad idea to implement Peterson's algorithm in C?
+16=What is XCHG?
+17=What CPU instruction is useful when implementing a mutex?
+18=What do condition variables do? 
+19=How do you poke threads under a condition variable?
+20=What happens if you only wake a single thread in a multi-thread condition variable?
+21=What is Spurious Wakeup? How is it mitigated?
+22=Does pthread_wait_signal() have anything to do with POSIX signals?
+23=How do I wake up all the threads in a condition variable?
+24=What does pthread_cond_wait() (with mutex m) do?
+25=Why are spurious wakes useful?
+26=What must be done before calling pthread_cond_wait?
+27=What are the two concerns of advanced (i.e. real life) counting semaphores?
+
+[quiz6-deadlock]
+1=What are Coffman conditions conditions for?
+2=What are the 4 conditions for deadlock?
+3=What must happen for circular wait to occur?
+4=What is meant by hold and wait?
+5=What is meant by no preemption?
+6=What is Livelock?
+7=How do we check for deadlock potential using a Resource Allocation Graph? (Hint: LOL REDDIT)
+
+[quiz6-virtualMemory]
+1=What are the 2 main advantages of Virtual Memory?
+2=What is the MMU?
+3=When does the MMU interrupt the CPU (if at all)?
+4=Why are pages useful?
+5=What is a page?
+6=How big are pages on a typical Linux OS?
+7=How many pages does a typical Linux OS use? (HINT: Show equation!)
+8=What is a frame?
+9=What is a page table?
+10=What data structure do the simplest page tables use?
+11=Why do naive page tables (arrays) work on 32 bit architectures, but not 64 bit ones?
+12=What is the purpose of the offset?
+13=How are block indexes/offsets stored within a memory address? (Hint: think CS398)
+14=What are Multi-level page tables? What problem do they solve?
+15=Do unoptimized page tables slow down memory access? If so, what optimizations do we make?
+16=What determines how useful the TLB is to a program? How many programs is this useful for?
+17=Can frames be shared between processes?
+18=Can we specify permissions (e.g. read, write, both) for memory blocks? If so, where are these stored?
+19=What are the two ways processes can share memory?
+20=When can a process use mmap()?
+21=What is the purpose of the Dirty bit? Where is it stored?
+22=What is the purpose of the NX bit? Where is it stored?
+
+[quiz6-pipes]
+1=What are pipes?
+2=Are POSIX pipes directed (one- or two-way)?
+3=Who can we communicate to with pipes?
+4=How can we use pipes to talk to child processes?
+5=Can we use a pipe to communicate within a process? If so, what's a potential danger we must avoid?
+6=Why must we terminate our pipe transmissions?
+7=What are the 3 ways we can terminate a pipe transmission?
+8=What is the purpose of fdopen()?
+9=Can we use open() or fopen() on a pipe instead of fdopen()? If so, why do we usually avoid it?
+10=What is meant by "Hungry Hungry Pipes"?
+11=Under what conditions does C automatically flush a pipe [buffer]?
+12=Which streams in C are line buffered (if any)?
+13=If we want to have two-way communication with pipes, how many pipes must we create?
+14=When does a process receive a SIGPIPE signal?
+15=If everyone but the child closes a pipe's read end and the child tries to write to it, is SIGPIPE generated? What is the common habitual fix?
+16=When is an unnamed pipe freed by the OS?
+
+[quiz6-files]
+1=How do we tell the size of a file? (actual code)
+2=How do we move to an arbitrary position n within a file? (actual code)
+3=What function sets the position within a file?
+
+[quiz6-manpages]
+1=What C type is the first argument of most of f* functions? (Hint: NOT a file descriptor!)
+2=What units of size does fseek() use?
+3=How is the position within a file after fseek() computed?
+4=What are the special values of arg_3 for fseek()? What does each represent?
+5=What does ftell() do?
+6=What are fgetpos() and fsetpos()? Why are they useful on non-UNIX systems?
+7=What do most f* functions return on success? On failure? (Hint: this messes with if statements)
+8=What does rewind return? (Hint: it's not "0 if successful. -1 otherwise")
+9=What does fflush() do?
+10=How do we flush ALL streams within a process?
+11=What does fflush() return on success? On failure? (Hint: this is 50% gotcha)
+12=What happens to a file descriptor if its fdopen'ed file ptr is closed?
+13=What is the result of using fdopen() on a shared memory object?
+
+[quiz7-errorHandling]
+1=What is errno and when is it set?
+2=How is errno handled in threads?
+3=When is errno reset automatically?
+4=Is it a good idea to change the value of errno for later use?
+5=When handling a signal, what should we do to errno?
+6=What does strerror() do?
+7=What does perror() do?
+8=Is strerror() thread safe? If not, what can we use instead?
+9=What does EINTR mean?
+10=If a system call has an EINTR, what should we do?
+11=What is the gotcha with EINTR and read()/write() on Linux?
+12=What is the rule of thumb as to which calls can be interrupted?
+13=What two things can happen if a signal handler is invoked during a system call?
+14=What function do we use to create a signal handler?
+15=What is the SA_RESTART flag for signal handler creation?
+16=Does SA_RESTART work for all calls?
+
+[quiz7-networking1]
+1=What is the difference between "IP#" and "IPv#"?
+2=What percent of today's packets are IPv4 packets?
+3=What is the major drawback of IPv4?
+4=How many bits can an IPv6 address use?
+5=Does a machine have to choose between having an IPv4 and IPv6 address? If so, which one will it choose?
+6=What are 127.0.0.1 and 0:0:0:0:0:0:1?
+7=What is ::1?
+8=How many bits can a port number have?
+9=What is a port?
+10=What is special about ports < 1024?
+11=What is the port # for unencrypted HTTP requests?
+12=What does TCP guarantee that UDP doesn't? (Hint: 2 separate things)
+13=What percentage of UDP packets are dropped between 2 distant datacenters?
+14=Why is UDP useful even though it isn't 100% reliable?
+15=Does UDP use connections? Does TCP?
+16=What does TCP do?
+17=What protocol (TCP or UDP) do most internet services use today, and why?
+18=What protocol (TCP or UDP) does a web browser use?
+
+[quiz7-networking2]
+1=What is the purpose of getaddrinfo()?
+2=What does getaddrinfo() return? Why?
+3=What does getnameinfo() do?
+4=What 2 functions does getnameinfo() replace?
+5=What are the advantages of getnameinfo() over the 2 functions it replaces?
+6=What is the purpose of DNS?
+7=What protocol does DNS use internally?
+8=Is DNS secure on its own? Why (not)?
+9=What 3 calls (in the correct order) connect us to a TCP server?
+10=What does socket() return?
+11=Which function actually attempts a connection to a TCP server?
+12=What parameters does connect() accept? Why does it need a size parameter?
+13=What's the shortcut function to free an addrinfo struct?
+14=What do we use to print out getaddrinfo errors? (Hint: it isn't errno)
+15=What are hints?
+16=What do AF_INET and AF_INET6 do?
+17=What two types of address can getaddrinfo() accept?
+
+[quiz7-networking3]
+1=What are the 4 parts to an HTTP request (in order)?
+2=How many digits does an HTTP response code have?
+3=What do "htons" and its ilk do?
+4=What class of machines actually need "htons" et al. (among others)?
+5=What are the "big 4" TCP server creation calls (in order)?
+6=Which calls used to create a UDP server? (Hint: there are 2, not 4)
+7=What does socket() do?
+8=What does bind() do?
+9=What does listen() do? (Hint: it's non-blocking)
+10=What waiting room size do high performance servers use?
+11=What happens when a remote client connects to a server?
+12=Do server sockets close if the client disconnects?
+13=What does accept() do? (Hint: it does block)
+14=What is the gotcha with accept()?
+15=When creating a TCP server, what hint MUST we specify in getaddrinfo()?
+16=What happens if we try to re-use a previously taken (in our program) port (by default)?
+17=How can we safely reuse ports?
+18=What must we do when not specifying all the parameters of an addrinfo struct?
+19=Ports are per-_______.
+20=What happens if a process quits without letting go of its ports? (Hint: kill-hack.sh)
+21=Do we have to specify a port for a TCP client?
+22=How do we specify a specific port for a TCP client to use?
+
+[quiz7-networkManpages]
+1=What are the 2 variants of strerror_r()? Which one is preferred, if any?
+2=What happens if strerror() receives an undefined errno?
+3=(Reminder) What is the purpose of getaddrinfo()'s hints argument?
+4=What are the 3 main valid values for hints.ai_family?
+5=What are the 3 main valid values for hints.ai_family?
+6=What happens if one of hints' non-int values is set before passing into getaddrinfo()?
+7=What does the AI_PASSIVE flag do?
+8=What happens if getaddrinfo()'s first parameter is null?
+9=What does AI_V4MAPPED do?
+10=What happens if socket() receives a datatype (eg. SOCK_STREAM) and a protocol that don't logically match up?
+11=How are incomplete connections handled in listen()'s queue?
+12=What happens if listen() is called with a non-positive size value?
+13=What happens to the address output if accept() accepts a connection with an unbound client?
+14=How can we make connect() non-blocking?
+15=What happens to the would-be socket if connect() is interrupted?
+
+[quiz7-scheduling]
+1=What is the order of TCP establishment signals?
+2=What is a SYN flood?
+3=What is the purpose of a SYN?
+4=What is the purpose of the sequence number?
+5=What does TCP stand for?
+6=What does UDP stand for?
+7=Where does TCP store its IP addresses?
+8=What is the idea behind TCP's receiving window?
+9=How does TCP avoid congestion issues?
+10=What makes a processor scheduling method "preemptive"?
+11=Which processor schedulers have bad I/O parallelism?
+12=What scheduler does Linux use?
+13=What is another name for a stride scheduler?
+14=What happens if TCP runs out of sequence numbers?
+15=What is silly window syndrome?
+16=What is the idea behind TCP's persist timer?
+17=What does the TCP_NODELAY option tell TCP to do?
+18=Does UDP have any built-in congestion control mechanism?
+
+[quiz8-files1]
+1=What are the two overarching goals of a file system?
+2=What does . mean in a path?
+3=What does .. mean in a path?
+4=What does ... mean in a path?
+5=What is an absolute path?
+6=What is a relative path?
+7=In a UNIX path, what does ~ represent?
+8=Why are disk blocks the same size as memory pages?
+9=What information is stored for each file? (Hint: ACM, SINC-APP)
+10=What are the 3 UNIX file permissions?
+11=Are directories inodes? Are files?
+12=How do inodes store file contents?
+13=How many pointers fit in each indirection table?
+
+[quiz8-files2]
+1=If the file name isn't the actual file, what is?
+2=What is a directory?
+3=Are directories inodes?
+4=What terminal command lets us find inode #s?
+5=What C command lets us find inode #s?
+6=List the 3 variants of stat().
+7=What does fstat() do?
+8=What does lstat() do?
+9=What information does stat() return?
+10=What 3 functions can I use to enumerate the contents of a directory?
+11=Why is calling closedir() after an opendir() important?
+12=What design pattern is nasty in C? (Hint: Djikstra hates it, like everything else)
+13=Does C formally support exception handling?
+14=What are the two gotchas of recursing with readdir()?
+15=Is readdir() thread safe? If not, what do we use instead?
+16=How do we determine if a directory entry (DIRENT) is a directory?
+
+[quiz8-files3]
+1=What UNIX command do we use to hard link files?
+2=What are 'hard links'?
+3=What C command do we use to hard link files?
+4=What do rm and unlink do? (Hint: not deletion)
+5=When is a file deleted from disk?
+6=How can we 'stealth' files from the OS while keeping them usable?
+7=How are hard links useful in backups?
+8=Can you hard link to directories? Why (not)?
+9=What is chmod short for?
+10=Is chmod() a valid C call?
+11=What does -R on chmod do?
+12=What command do we use to change the owner of a file?
+13=What command do we use to change the group of a file?
+14=What does chnod ugo-x blah.py do?
+15=What does chmod o=x blah.py do?
+16=What are the 3 permission groups? What's the other valid 'shortcut'?
+17=What does the first character in ls -l's output represent?
+18=What are the possible values for ls -l's first character, and what do they stand for? (Hint: DCL-PBS)
+19=How does sudo work?
+20=What is the difference between real and effective UIDs?
+21=Why do we need two types of UIDs?
+22=What does the setuid bit on a file do?
+23=What's the difference between getuid() and geteuid()?
+24=If I can say "I am root", what is my UID? My effective UID?
+
+[quiz8-files4]
+1=If stat() fails, should we trust its struct?
+2=What C function can we use to create a symlink?
+3=What UNIX command can we use to create a symlink?
+4=What does the readlink command do?
+5=What are the 3 main advantages of symlinks over hard links?
+6=What is the main disadvantage of symlinks?
+7=What is /dev/null?
+8=What does the sticky bit do?
+9=What is the purpose of the shebang (!#)?
+10=When using a shebang, must we use an absolute path for env?
+11=How do we hide files from ls? (Hint: dotfiles)
+12=How do we list hidden files?
+13=What does the execute bit control in directories?
+14=What is file globbing? How does it work?
+15=What flag lets mkdir set a new directory's permissions atomically?
+16=What flag lets mkdir make in-the-middle directories (e.g. /p1/p2/p3 where p1 doesn't exist)?
+17=What is special about umask's format?
+18=What is a umask attached to?
+19=How do child processes handle umask values?
+20=What does dd do? What are its useful parameters?
+21=What does dev/zero do?
+22=What does touch do?
+
+[quiz8-files5and6]
+1=What are virtual file systems?
+2=What are the 3 main virtual file systems on Linux?
+3=Which UNIX command tells us the currently mounted file systems?
+4=What does bogomips stand for?
+5=What UNIX command mounts a disk image? (The whole thing)
+
+[udo mount -o loop [file] [imgDir]
+1=How does the OS load (custom) programs into memory?
+2=How does the OS load (non-custom read-only) libraries into memory?
+3=How do we map a file into memory? How do we clean up when we're done?
+4=What are PROT_READ, PROT_WRITE, and PROT_EXEC used for?
+5=What are the two principal advantages of memory mapping files?
+6=When are memory-mapped files faster than stream-based approaches e.g. read()?
+7=How do we share memory between processes? (The whole C command)
+8=What is the superblock? How do we protect it?
+9=What is the difference between a write-back and a write-through cache?
+10=What does the UNIX command fsck do?
+
+[quiz8-raid]
+1=What is the idea behind RAID?
+2=What are the advantages of RAID 2?
+3=What are the disadvantages of RAID 2?
+4=How did RAID 2 work?
+5=How did RAID 3 work?
+6=What are the advantages of RAID 3?
+7=What are the disadvantages of RAID 3?
+8=Why does the kernel cache the file system?
+9=What are the pros/cons of write-through vs. write-back caches?
+10=What is a 'read-ahead' strategy?
+11=How do we force-flush changes to disk? Does this always work?
+12=If the MTTF of 1 disk is M, what is the MTTF of N disks?
+13=What percent of disks fail per year?
+14=What's the main difference between a TCP server and a UDP one?
+
+[quiz8-manpages]
+1=What does lstat do differently than stat?
+2=Are stat()'s time fields distro-specific in Linux?
+3=How do we check the type of stat()'s result?
+4=What happens if we stat() a file that doesn't exist?
+5=What does readdir() do?
+6=Should we attempt to free() results returned by readdir()?
+7=If we want to store the results of readdir(), do we have to make a deep copy?
+8=What does rewinddir() do?
+9=What should we do after calling chmod()?
+10=What flags does chmod() use? (Give a general format)
+11=What are chmod()'s arguments?
+12=What happens if we refer to munmap'd memory?
+13=Does munmap remove memory locks?
+14=What happens if we try to munmap() something not mapped by mmap()?
+
+[final_misc]
+1=What is the difference between stdin and STDIN_FILENO?
+2=What is starvation?
+3=What are orphans?
+4=Are orphans and zombies the same thing?
+5=What is turnaround time?
+6=What is waiting time?
+7=What is response time?
+8=Which scheduling algorithm has the lowest average wait time?
+9=What is the ready queue?
+10=What are the advantages of Round Robin scheduling?
+11=What are the disadvantages of Round Robin scheduling?
+12=What are the advantages of non-preemptive SJF scheduling? minimal context switching, average waiting time
+13=What are the disadvantages of non-preemptive SJF scheduling?
+14=What are the advantages of non-preemptive SJF scheduling? 
+15=What are the disadvantages of non-preemptive SJF scheduling?
+16=What are the advantages of FCFS scheduling?
+17=What are the disadvantages of FCFS scheduling?
+18=How does preemptive priority-based scheduling work?
+19=What are the advantages of preemptive priority-based scheduling?
+20=What are the disadvantages of preemptive priority-based scheduling?
+21=What are the Coffman conditions conditions for?
+22=How does increasing RR's time quanta affect its performance?
+23=Which one of "stdin" and "STDIN_FILENO" is a file descriptor? What type is the other one?
+24=What C command can we use to redirect stdout?
+25=Which signals can be caught or ignored?
+26=What is the purpose of sigaction()'s sa_mask property?
+27=What is the Banker�s algorithm do?
+28=What are the phases of the TCP handshake?
+29=What are the pros/cons of select()?
+30=What are the pros/cons of epoll()?
+31=What is the difference between edge-based and level-based triggering?
+32=How are pipes and FIFOs different?
+33=What happens if you read() from a pipe/FIFO without writers?
+34=What happens if a you write() to a pipe/FIFO without readers?
+35=How does DNS resolution work?

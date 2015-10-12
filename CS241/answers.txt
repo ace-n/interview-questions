@@ -1,0 +1,490 @@
+[quiz2]
+1A=pipes output into a file
+2A=sleepsort - waits for (size of value) ms and returns values in a size-based order
+3A=a deep copy of everything EXCEPT its PID, signals, or alarms
+4A=use wait() or waitpid()
+5A=sort of - only the lowest 8 bits
+6A=Don't wait() for them!
+7A=system becomes unstable
+8A=if a process terminates, its children are assigned to and waited on by an OS process
+9A=terminated processes that clutter the kernel process table
+10A=wait() on them
+11A=using kill() #hacking
+12A=SIGUSR#; SIGTERM
+13A=they vary across platforms
+14A=it returns NULL
+15A=allows me to use "foo" instead of "int"; structs
+16A=initialized and immortal
+17A=it returns a ptr to a scratch-pad buffer (which changes if it's called again)
+18A=sizeof(type) * array_len
+
+[quiz3]
+1A=yes!
+2A=when memory outside of blocks is inconsistently free/taken
+3A=when memory within blocks is inconsistently free/taken
+4A=we try to fit as many different-sized blocks into memory as we can while minimizing block moving
+5A=use free block closest to target size
+6A=use blocks at the beginning of largest available free chunk
+7A=use first free block that works
+8A=malloc - create; realloc - expand if you can else create; calloc - malloc with zero initialization
+9A=Return NULL
+10A=allocate more heap memory
+11A=no
+12A=yes
+13A=zeroes out new memory to prevent programs reading zombies� data
+14A=yes - realloc may move the array, so we need an �array = �
+15A=free blocks point to other free blocks as a doubly linked list
+16A=size of previous blocks; helps us coalesce adjacent free blocks
+17A=store block size and free state on the block itself (regardless of its type)
+18A=as SIZE�s last bit; an aligned SIZE is a multiple of 4
+19A=blocks are grouped by size
+20A=a segregated free list with sizes that are powers of 2
+21A=fast but fragment a lot
+22A=evil buffer overflows can overwrite them
+23A=virtual memory
+24A=units of memory shared between RAM and disk
+25A=passing/receiving a single void ptr
+26A=pthread version of wait()
+27A=returning from a thread
+28A=program crashes
+29A=Gotcha! (We can only have 1)
+30A=they�re all equal
+31A=kills a pthread either on a major event or immediately
+32A=it�s too forceful
+33A=returning from main kills the program; pthread_exit() just stops the main thread
+34A=when all pthreads are dead
+35A=when returning from main
+36A=pthread table can overflow and crash the program
+37A=undefined behavior
+38A=using locking mechanisms
+39A=yes - they use a static buffer shared between threads
+40A=pthread_create()
+41A=yes
+42A=yes
+43A=threads have easier communication but less security
+44A=return a specified value from main()
+45A=the threads are copied
+46A=&thread id, attribs, function, data ptr
+47A=it returns 0 on success - NOT a new thread ID
+48A=return from main, return from thread, kill thread, kill process
+49A=too many threads (or zombies)
+50A=creating a thread
+51A=EDEADLK
+52A=kill program
+53A=undefined
+
+[quiz4-part1]
+1A=a piece of code that cannot support multiple threads
+2A=yes!
+3A=use a mutex
+4A=cleaning up after unlocked mutexes
+5A=undefined behavior
+6A=any that try to lock it
+7A=a default-initialized mutex constructor
+8A=only for global variables, faster w/less error checking
+9A=they are copied; locking M on one process doesn't lock the other's M
+10A=only thread T
+11A=yes; one lock per shared data structure
+12A=locks must be conceptually correct
+13A=a tiny bit
+14A=a construct that limits the # of threads in a code section
+15A=sem_wait(), sem_post()
+16A=wait until count > 0, decrement it, and return
+17A=increment the semaphore and return
+18A=number of AVAILABLE threadspots in a critical section
+19A=0
+20A=named semaphores; Mac OSX
+21A=yes (duh)
+22A=mutexes are faster
+23A=yes; allows us to release a thread that calls handler-unsafe functions
+24A=no; sigaction
+25A=DEADLOCK!
+26A=undefined behavior
+27A=counting semaphore
+
+[quiz4-part2]
+1A=pthread_mutex_lock without the waiting
+2A=nothing
+3A=semaphore is private to its process; semaphore is shared between processes
+4A=undefined behavior
+5A=nothing
+6A=same thing as sem_wait, but returns an error instead of waiting
+7A=it happens in an indivisible step
+8A=the copy is broken!
+9A=pthread_yield(), to reduce CPU waste while locking
+10A=mutual exclusion, bounded wait, progress
+11A=a task can never have an infinite waiting time
+12A=we shouldn't wait unless we have to
+13A=HI my flag, turn = ME, wait(your flag = LO || turn = YOU), METHOD, LO my flag
+14A=HI my flag, wait(your flag HI and turn YOU), LO my flag, wait(turn = YOU), HI my flag, turn = YOU, LO my flag
+15A=compilers can reorder instructions
+16A=atomic CPU instruction that swaps a register and a memory location's values
+17A=XCHG
+18A=let groups of threads sleep until poked
+19A=pthread_wait_signal()
+20A=the OS decides which thread to wake up
+21A=a waiting thread can be accidentally awoken; wait until a given continuation condition is true
+22A=no!
+23A=pthread_cond_broadcast
+24A=unlock m, wait for pthread_cond_signal, lock m
+25A=signals can get missed if a race condition occurs, and they're faster than avoiding race conditions
+26A=lock its mutex
+27A=queue for fairness, works across processes
+
+[quiz6-deadlock]
+1A=deadlock
+2A=mutual exclusion, circular wait, hold/wait, no pre-emption
+3A=a resource allocation graph has a cycle
+4A=a process is holding some resources and waiting for others
+5A=once a process has a resource, it can't let go of it
+6A=processes continually swap resources in an attempt to stop deadlock
+7A=check for circular dependency
+
+[quiz6-virtualMemory]
+1A=keeps processes safe from others, allows memory relocation
+2A=CPU part that converts virtual address to physical one
+3A=when segfaulting
+4A=they take (many) fewer bits to address than raw memory
+5A=block of virt mem
+6A=4KB (2^12 bytes)
+7A=4 GB / 4 KB = (2^10)^2
+8A=physical memory block with the size of the virtual memory block
+9A=a map between pages and frames
+10A=array
+11A=64 bit addresses are bigger, and take orders of magnitude more space (~40 petabytes) to store
+12A=refer to a specific address within a frame
+13A=block index, then offset
+14A=page tables of page tables; 64-bit page table size
+15A=yes - a lot; TLB (cache of table lookups)
+16A=whether or not its memory accesses repeat a lot; most
+17A=yes
+18A=yes, page table
+19A=commonly-needed read only memory, mmap()
+20A=when talking to its children
+21A=determine if a page needs to be updated on disk, page table
+22A=enables DEP, page table
+
+[quiz6-pipes]
+1A=POSIX constructs that allow data shipment between processes
+2A=yes (one-way)
+3A=our children(?)
+4A=pipe(), then fork()
+5A=silly idea but we can; deadlock by filling the pipe buffer 
+6A=processes wait on pipes until told to stop
+7A=fflush(), printf("\n"), look for a terminal character
+8A=converts file descriptors into FILE ptrs, which lets us use *f functions
+9A=yes; it's slow
+10A=pipes generally wait for "food" until told to stop
+11A=when its full, when its closed
+12A=only terminal streams
+13A=2
+14A=when writing to a pipe with no listeners
+15A=no!, close unused ends immediately after fork()
+16A=when all dependents have exited
+
+[quiz6-files]
+1A=fseek(f, 0, SEEK_END); return ftell(f);
+2A=fseek(f, n, SEEK_SET);
+3A=fseek()
+
+[quiz6-manpages]
+1A=FILE ptr
+2A=bytes
+3A=add arg_2 bytes to arg_3
+4A=SEEK_SET - beginning of file, SEEK_CUR - current pos, or SEEK_END - end of file
+5A=returns current position in a file
+6A=same as ftell() and fseek(); some of these systems don't support ftell()/fseek()
+7A=0 if successful; -1 otherwise
+8A=nothing
+9A=flush a stream
+10A=fflush(NULL)
+11A=0, EOF
+12A=it too is closed
+13A=undefined
+
+[quiz7-errorHandling]
+1A=error indicating value set when a system call fails
+2A=each has their own copy
+3A=never!
+4A=no
+5A=preserve its value
+6A=print out message for a particular errno value
+7A=prints out first variable (if possible), then the most recent error message
+8A=no, strerror_r()
+9A=action was interrupted
+10A=retry it
+11A=they auto-restart on disk ops, but EINTR on network ones
+12A=slow, blocking ones are interruptible, others are not
+13A=call fails with EINTR, call auto-restarts
+14A=sigaction()
+15A=change *SOME* EINTR fails to auto-restarts
+16A=no!
+
+[quiz7-networking1]
+1A=none
+2A=95
+3A=addresses are limited to 32 bits
+4A=128
+5A=no - it can have both
+6A=addresses of localhost
+7A=shortened version of 0:0:0:0:0:0:1
+8A=16
+9A=globally numbered pipe that processes can access
+10A=only root processes can use them
+11A=80
+12A=all packets will arrive, packets will be in order
+13A=3%
+14A=faster than TCP
+15A=no; yes
+16A=creates a pipe between two machines and hides the low-level details
+17A=TCP; it abstracts out all the details
+18A=TCP
+
+[quiz7-networking2]
+1A=domain name -> IP address (DNS resolution)
+2A=linked list of addrinfo structs, multiple addresses may be available
+3A=gets IP address info from getaddrinfo()
+4A=gethostbyaddr(), getservbyport()
+5A=reentrant, doesn't care about IP4-vs-6
+6A=convert domain names to IP addrs
+7A=UDP
+8A=no; requests unencrypted
+9A=getaddrinfo(), socket(), connect()
+10A=a file descriptor
+11A=connect()
+12A=file descriptor, address struct, address struct size (ASS); ASS can vary
+13A=freeaddrinfo()
+14A=gai_strerror(result)
+15A=addrinfo search parameters
+16A=switch between IPv4 and IPv6 in getaddrinfo()
+17A=domain name, IP address
+
+[quiz7-networking3]
+1A=method, resource, protocol, 2 newlines
+2A=3
+3A=convert between processor and internet endianness
+4A=x86
+5A=socket(), bind(), listen(), accept()
+6A=socket(), bind()
+7A=creates a 'network descriptor'
+8A=links a socket to a hostname/port
+9A=set size of listen queue
+10A=128+
+11A=it's moved to an unused port for future communication
+12A=no
+13A=wait for new connection requests and assign them to their own FD
+14A=we MUST use the FD it returns, NOT the server's socket FD
+15A=SOCK_STREAM
+16A=crash and burn
+17A=use SO_REUSEPORT in setsockopt()
+18A=zero it out
+19A=machine
+20A=they're still taken
+21A=no
+22A=bind() before connect()
+
+[quiz7-networkManpages]
+1A=both GNU and XSI variants accept a user-supplied buffer, but only XSI requires it; XSI
+2A=returns some non-NULL value
+3A=change address query criteria
+4A=AF_INET, AF_INET6, AF_UNSPEC
+5A=SOCK_STREAM, SOCK_DGRAM, 0 (any type)
+6A=undefined
+7A=uses TCP if set, UDP otherwise (CONFIRM)
+8A=returns info for localhost
+9A=if specified in hints.ai_flags, getaddrinfo()  returns IPv6 mappings for IPv4 addresses
+10A=it errors
+11A=system-dependent
+12A=clamps size at system-dependent min value
+13A=becomes garbage
+14A=set O_NONBLOCK on its FD
+15A=its generated async'ly
+
+[quiz7-scheduling]
+1A=SYN; SYN-ACK; ACK
+2A=sending many SYN packets and not ACKing them
+3A=synchronize sequence #s
+4A=allows TCP to correctly order data
+5A=transmission control protocol
+6A=user datagram protocol
+7A=in the enclosing packet
+8A=receiver tells sender how much data they want
+9A=by limiting the number of unacknowledged packets
+10A=interrupts existing job if a more optimal one exists
+11A=first come first serve, non-preemptive shortest job first
+12A=stride scheduler that gives more time to processes who haven't used much recently
+13A=completely fair scheduler
+14A=loops back to 0
+15A=using a receiving window smaller than the TCP header
+16A=if a window size update is missed, ask nicely for a new one instead of waiting forever
+17A=don't wait for a full packet's worth of data before sending
+18A=no
+
+[quiz8-files1]
+1A=CIA triad, performance
+2A=current directory
+3A=parent directory
+4A=INVALID!
+5A=a path starting from the root directory
+6A=a path not starting from the root directory
+7A=home directory
+8A=so we can page things in and out of memory
+9A=name, size, accessed/created/modified time, permissions, path, checksum, inode
+10A=read, write, execute (rwx)
+11A=yes to both
+12A=as pointers to disk blocks
+13A=DO THIS EXAMPLE PROBLEM!
+
+[quiz8-files2]
+1A=the inode
+2A=mapping of names to inode #s
+3A=yes!
+4A=ls -i
+5A=*stat()
+6A=fstat(), lstat(), stat()
+7A=stat() for fd's
+8A=stat() for symbolic links
+9A=all information on the inode
+10A=opendir(), readdir(), closedir()
+11A=prevents zombie fd's/memory leaks
+12A=exception handling
+13A=no
+14A=returns . and .. as well as subdirectories/files
+15A=no; readdir_r()
+16A=use S_ISDIR() or S_ISREG() on a DIRENT's st_mode
+
+[quiz8-files3]
+1A=ln
+2A=multiple paths pointing to one file
+3A=link
+4A=destroy a name-inode link
+5A=when no more links or fd's point to it
+6A=unlink them completely except for an FD
+7A=once an archived file exists, it can be hard linked to if nothing changed
+8A=no; filesystems are assumed to be trees and enforcing this is too expensive
+9A=change file mode bits
+10A=yes!
+11A=make it recursive
+12A=chown
+13A=chgrp
+14A=make blah.py unexecutable
+15A=make blah.py executable by its owner
+16A=user, group, owner; all
+17A=file type
+18A=- (file), d (directory), c (character device file), l (symlink), p (pipe), b (block device), s (socket)
+19A=by setting its effective user ID to 0
+20A=real UIDs indicate who ran the program; effective UIDs indicate the program's permissions
+21A=to determine who ran a program AND to determine its permissions
+22A=set its effective UID to its owner's
+23A=one returns the real UID, other returns the effective UID
+24A=some number, 0
+
+[quiz8-files4]
+1A=no
+2A=symlink()
+3A=ln -s
+4A=resolve a symlink
+5A=refer to nonexistent files, directories, and files outside of the file system
+6A=slower than normal filepaths
+7A=a black hole that destroys anything sent to it
+8A=only allow owners and root to move/delete the file
+9A=executes 'env' to find a configuration-specific program path
+10A=yes!
+11A=prepend a .
+12A=ls -a
+13A=whether its contents can be listed
+14A=resolution of wildcard paths; adds every matching file to the command's argv list
+15A=-m 777
+16A=-p
+17A=subtracts rather than adds permissions
+18A=a process
+19A=they use their parent's
+20A=copy data; if/of - input/output file, bs - blocksize, count - # of blocks
+21A=give a stream of 0 bytes
+22A=create a file if it doesn't exist, change its modified time
+
+[quiz8-files5and6]
+1A=dynamically generated data available to the file system
+2A=dev, proc, sys
+3A=mount
+4A=bogus million instructions/second
+
+[udo mount -o loop [file] [imgDir]
+1A=mapping program contents into process' address space
+2A=share their memory between proc's
+3A=give mmap an FD; munmap()
+4A=setting permissions on mapped memory
+5A=data immediately available, sharing between procs
+6A=when doing shared or nonsequential processing
+7A=mmap(0, size, PROT_OPTS, MAP_SHARED | MAP_ANONYMOUS)
+8A=block storing important system data; have multiple copies
+9A=don't write until needed (back) vs write when changed (through)
+10A=check file system integrity
+
+[quiz8-raid]
+1A=increase disk I/O by using tons of them and duplicate data to avoid the resulting disk failure barrage
+2A=faster reads, more reliable
+3A=slower writes, twice as expensive
+4A=mirrored file system
+5A=enforce an even # of 1's in each block (parity codes stored on an extra disk)
+6A=single disk failure not a problem, cheaper than RAID 2
+7A=all block writes must update their parity bit
+8A=keep things fast
+9A=write-through is safer but slower
+10A=since disk data is sequenced, it can be prefetched
+11A=sync() [for a filesystem] or fsync(FD); no
+12A=M/N
+13A=2-10%
+14A=TCP has to handshake; UDP waits until it gets something
+
+[quiz8-manpages]
+1A=doesn't follow symlinks
+2A=yes!
+3A=use S_IS*(st_mode)
+4A=ENOENT or ENOTDIR
+5A=iterate through a directory structure
+6A=NO!
+7A=yes
+8A=resets a directory stream
+9A=verify it worked with stat()
+10A=S_I[R/W/X]USR, S_IRWXU
+11A=path, OR'd flags of desired permissions
+12A=SEGFAULT!
+13A=yes
+14A=undefined
+
+[final_misc]
+1A=stdin is a FILE*
+2A=when a constant stream of requests prevents older requests from executing
+3A=processes without parents
+4A=no!
+5A=time between receipt and completion
+6A=time spent in ready queue
+7A=time between receipt and start
+8A=SJF
+9A=list of jobs ready for execution
+10A=no starvation, good response time, balanced throughput
+11A=deadlines rarely met, lots of (expensive) context switching
+13A=bad with long jobs (like FCFS), no deadlines, starvation.
+14A=long job safe
+15A=lots of context switching, no deadlines, starvation.
+16A=minimal context switches, no starvation if jobs are finite
+17A=long jobs destroy performance, doesn�t always meet deadlines.
+18A=assign jobs priorities, then periodically pick the highest priority one
+19A=good with deadlines
+20A=starvation, moderate context switching
+21A=deadlock
+22A=+ avg. response time (bad); - waiting/turnaround times for longer jobs (good) and + for shorter ones (bad)
+23A=stdin, FILE*
+24A=dup2(target, STDOUT_FILENO);
+25A=all except for SIGSTOP and SIGTERM
+26A=allow programmer to block other signals from being handled during handling of that signal
+27A=assumes worst case scenario (ie. procs take up their max possible resources) and lets a proc. to run iff. it survives said scenario
+28A=client sends server SYN packet with # C, server replies with a SYN-ACK packet with C + 1 and # S, client ACKs with C + 1 and S + 1.
+29A=simpler; limits connection count; designed prior to massive server era
+30A=more complex; no connection cap
+31A=level-triggered checks current state for matches, whereas edge-triggered checks state changes
+32A=pipes are anonymous while FIFOs are 'named' files
+33A=EOF
+34A=SIGPIPE
+35A=query from right to left to traverse the DNS server 'tree'
