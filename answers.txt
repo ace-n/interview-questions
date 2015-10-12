@@ -1,5 +1,5 @@
 [trees_intro]
-1A=faster. less memory footprint, common operations are (amortized) constant time
+1A=IGNORE
 2A=LIFO; FIFO
 3A=push to one stack and use the other to reverse the order of the first�s elements when popping
 4A=it has a root node

@@ -1,5 +1,5 @@
 [trees_intro]
-1=Why do we use stacks/queues instead of linked lists?
+1=IGNORE
 2=What is the acronym for a stack? (*IFO)? A queue?
 3=How can a queue be made out of stacks?
 4=What does it mean if a graph is rooted?
