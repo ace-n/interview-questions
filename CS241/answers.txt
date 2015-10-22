@@ -1,6 +1,6 @@
 [quiz2]
 1A=pipes output into a file
-2A=sleepsort - waits for (size of value) ms and returns values in a size-based order
+2A=waits for (size of value) ms and returns values in a size-based order
 3A=a deep copy of everything EXCEPT its PID, signals, or alarms
 4A=use wait() or waitpid()
 5A=sort of - only the lowest 8 bits
@@ -33,7 +33,7 @@
 12A=yes
 13A=zeroes out new memory to prevent programs reading zombies� data
 14A=yes - realloc may move the array, so we need an �array = �
-15A=free blocks point to other free blocks as a doubly linked list
+15A=free blocks store block size and a ptr to next free block
 16A=size of previous blocks; helps us coalesce adjacent free blocks
 17A=store block size and free state on the block itself (regardless of its type)
 18A=as SIZE�s last bit; an aligned SIZE is a multiple of 4
@@ -121,7 +121,7 @@
 16A=atomic CPU instruction that swaps a register and a memory location's values
 17A=XCHG
 18A=let groups of threads sleep until poked
-19A=pthread_wait_signal()
+19A=pthread_cond_signal()
 20A=the OS decides which thread to wake up
 21A=a waiting thread can be accidentally awoken; wait until a given continuation condition is true
 22A=no!
@@ -144,7 +144,7 @@
 1A=keeps processes safe from others, allows memory relocation
 2A=CPU part that converts virtual address to physical one
 3A=when segfaulting
-4A=they take (many) fewer bits to address than raw memory
+4A=IGNORE
 5A=block of virt mem
 6A=4KB (2^12 bytes)
 7A=4 GB / 4 KB = (2^10)^2
@@ -175,7 +175,7 @@
 8A=converts file descriptors into FILE ptrs, which lets us use *f functions
 9A=yes; it's slow
 10A=pipes generally wait for "food" until told to stop
-11A=when its full, when its closed
+11A=when its full or closed
 12A=only terminal streams
 13A=2
 14A=when writing to a pipe with no listeners
@@ -408,18 +408,17 @@
 2A=dev, proc, sys
 3A=mount
 4A=bogus million instructions/second
-
-[udo mount -o loop [file] [imgDir]
-1A=mapping program contents into process' address space
-2A=share their memory between proc's
-3A=give mmap an FD; munmap()
-4A=setting permissions on mapped memory
-5A=data immediately available, sharing between procs
-6A=when doing shared or nonsequential processing
-7A=mmap(0, size, PROT_OPTS, MAP_SHARED | MAP_ANONYMOUS)
-8A=block storing important system data; have multiple copies
-9A=don't write until needed (back) vs write when changed (through)
-10A=check file system integrity
+5A=sudo mount -o loop [file] [imgDir]
+6A=mapping program contents into process' address space
+7A=share their memory between proc's
+8A=give mmap an FD; munmap()
+9A=setting permissions on mapped memory
+10A=data immediately available, sharing between procs
+11A=when doing shared or nonsequential processing
+12A=mmap(0, size, PROT_OPTS, MAP_SHARED | MAP_ANONYMOUS)
+13A=block storing important system data; have multiple copies
+14A=don't write until needed (back) vs write when changed (through)
+15A=check file system integrity
 
 [quiz8-raid]
 1A=increase disk I/O by using tons of them and duplicate data to avoid the resulting disk failure barrage
@@ -465,6 +464,7 @@
 9A=list of jobs ready for execution
 10A=no starvation, good response time, balanced throughput
 11A=deadlines rarely met, lots of (expensive) context switching
+12A=minimal context switching, average waiting time
 13A=bad with long jobs (like FCFS), no deadlines, starvation.
 14A=long job safe
 15A=lots of context switching, no deadlines, starvation.

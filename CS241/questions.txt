@@ -1,6 +1,6 @@
 [quiz2]
 1=What does close(1); open("file") do?
-2=What does the following program do and how does it work?
+2=What is sleepsort?
 3=What does the child inherit from the parent? What does it not?
 4=How do I wait for my child to finish?
 5=Can I find out the exit value of my child?
@@ -124,7 +124,7 @@
 19=How do you poke threads under a condition variable?
 20=What happens if you only wake a single thread in a multi-thread condition variable?
 21=What is Spurious Wakeup? How is it mitigated?
-22=Does pthread_wait_signal() have anything to do with POSIX signals?
+22=Does pthread_cond_signal() have anything to do with POSIX signals?
 23=How do I wake up all the threads in a condition variable?
 24=What does pthread_cond_wait() (with mutex m) do?
 25=Why are spurious wakes useful?
@@ -144,7 +144,7 @@
 1=What are the 2 main advantages of Virtual Memory?
 2=What is the MMU?
 3=When does the MMU interrupt the CPU (if at all)?
-4=Why are pages useful?
+4=IGNORE
 5=What is a page?
 6=How big are pages on a typical Linux OS?
 7=How many pages does a typical Linux OS use? (HINT: Show equation!)
@@ -409,18 +409,16 @@
 3=Which UNIX command tells us the currently mounted file systems?
 4=What does bogomips stand for?
 5=What UNIX command mounts a disk image? (The whole thing)
-
-[udo mount -o loop [file] [imgDir]
-1=How does the OS load (custom) programs into memory?
-2=How does the OS load (non-custom read-only) libraries into memory?
-3=How do we map a file into memory? How do we clean up when we're done?
-4=What are PROT_READ, PROT_WRITE, and PROT_EXEC used for?
-5=What are the two principal advantages of memory mapping files?
-6=When are memory-mapped files faster than stream-based approaches e.g. read()?
-7=How do we share memory between processes? (The whole C command)
-8=What is the superblock? How do we protect it?
-9=What is the difference between a write-back and a write-through cache?
-10=What does the UNIX command fsck do?
+6=How does the OS load (custom) programs into memory?
+7=How does the OS load (non-custom read-only) libraries into memory?
+8=How do we map a file into memory? How do we clean up when we're done?
+9=What are PROT_READ, PROT_WRITE, and PROT_EXEC used for?
+10=What are the two principal advantages of memory mapping files?
+11=When are memory-mapped files faster than stream-based approaches e.g. read()?
+12=How do we share memory between processes? (The whole C command)
+13=What is the superblock? How do we protect it?
+14=What is the difference between a write-back and a write-through cache?
+15=What does the UNIX command fsck do?
 
 [quiz8-raid]
 1=What is the idea behind RAID?
