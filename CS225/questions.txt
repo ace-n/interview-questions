@@ -172,6 +172,7 @@
 49=How does Djikstra's algorithm differ from Prim's algorithm?
 50=Is Djikstra's algorithm safe for use with negative edges?
 51=In Djikstra's algorithm, when can we stop considering a node?
+52=What is the purpose of Djikstra's algorithm?
 
 [Hashing2]
 1=How does linear probing resolve collisions?
