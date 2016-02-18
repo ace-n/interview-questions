@@ -172,6 +172,7 @@
 49A=use minimum path length from start node instead of minimum edge length
 50A=no
 51A=when we have explored all its edges
+52A=find the shortest path between 2 nodes in a graph
 
 [Hashing2]
 1A=hashes to a slot and continues through array at a certain step size until an empty slot is found
