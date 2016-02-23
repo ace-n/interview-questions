@@ -184,3 +184,11 @@
 7A=when the size of the underlying array is changed, the proper positions of its elements may too and need to be recalculated
 8A=probe-based - faster overall, separate chaining - better with large keys
 9A=hash tables
+
+[coding]
+1=Check YES if you've done this.
+2=Check YES if you've done this.
+3=Check YES if you've done this.
+4=Check YES if you've done this.
+5=Check YES if you've done this.
+6=Check YES if you've done this.
