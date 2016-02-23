@@ -186,9 +186,9 @@
 9A=hash tables
 
 [coding]
-1=Check YES if you've done this.
-2=Check YES if you've done this.
-3=Check YES if you've done this.
-4=Check YES if you've done this.
-5=Check YES if you've done this.
-6=Check YES if you've done this.
+1A=Check YES if you've done this.
+2A=Check YES if you've done this.
+3A=Check YES if you've done this.
+4A=Check YES if you've done this.
+5A=Check YES if you've done this.
+6A=Check YES if you've done this.
