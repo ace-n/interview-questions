@@ -160,11 +160,11 @@
 37=Summarize Kruskal's algorithm.
 38=What is the time complexity of Kruskal's algorithm for each PQ variant?
 39=Summarize Prim's algorithm.
-40=When using Prim's algorithm on a sparse graph, what graph/priority queue implementations should be used?
-41=When using Prim's algorithm on a dense graph, what graph/priority queue implementations should be used?
-42=What is the time complexity of Prim's algorithm when using a heap and an adjacency list?
-43=What is the time complexity of Prim's algorithm when using a heap and an adjacency matrix?
-44=What is the time complexity of Prim's algorithm when using an unsorted array as the priority queue?
+40=IGNORE
+41=IGNORE
+42=IGNORE
+43=IGNORE
+44=IGNORE
 45=According to CS225, what makes a graph sparse?
 46=When storing directed graphs in an adjacency matrix, what is the convention regarding rows and columns?
 47=What is the single-source shortest path problem?
