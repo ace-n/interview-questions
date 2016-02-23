@@ -160,11 +160,11 @@
 37A=iteratively mark (as MST) the shortest n-1 edges that don't create cycles
 38A=O(n + m lg n) for the two relevant PQ variants
 39A=mark the lowest-weight unmarked edges between a visited and unvisited node until no longer possible
-40A=heap + adjacency list
-41A=unsorted array + either adj. matrix or adj. list
-42A=O((n + m) log n)
-43A=O(n^2 + m log n)
-44A=O(n^2)
+40A=IGNORE
+41A=IGNORE
+42A=IGNORE
+43A=IGNORE
+44A=IGNORE
 45A=m is O(n)
 46A=rows = origin, columns = destination
 47A=minimize the cost between a given point A to every other vertex B
