@@ -184,3 +184,11 @@
 7=What is rehashing?
 8=What are the advantages of each of the two collision resolution strategies over the other?
 9=What technique do dictionaries usually use?
+
+[coding]
+1=Review mergeSort?
+2=Review quickSort?
+3=Review heaps?
+4=Review binary search?
+5=Review AVL trees?
+6=Review disjoint sets? (+ uptrees && smart unions)
