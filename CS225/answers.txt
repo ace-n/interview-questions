@@ -174,17 +174,6 @@
 51A=when we have explored all its edges
 52A=find the shortest path between 2 nodes in a graph
 
-[Hashing2]
-1A=hashes to a slot and continues through array at a certain step size until an empty slot is found
-2A=flag bucket slots as never, currently, or previously used
-3A=having chunks of used/unused bucket slots; double hashing
-4A=determining step size from key values
-5A=constant load factor
-6A=0.7; resize array to a (usually cached) prime number > 2*current size and "rehash" the data into its appropriate buckets
-7A=when the size of the underlying array is changed, the proper positions of its elements may too and need to be recalculated
-8A=probe-based - faster overall, separate chaining - better with large keys
-9A=hash tables
-
 [coding]
 1A=Check YES if you've done this.
 2A=Check YES if you've done this.

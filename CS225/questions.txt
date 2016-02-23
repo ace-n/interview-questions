@@ -174,17 +174,6 @@
 51=In Djikstra's algorithm, when can we stop considering a node?
 52=What is the purpose of Djikstra's algorithm?
 
-[Hashing2]
-1=How does linear probing resolve collisions?
-2=When using linear probing, what is one way to prevent unnecessary probing?
-3=What is primary clustering, and how is it solved (just give the vocabulary word)?
-4=What is double hashing?
-5=What condition makes hash tables TRUELY constant time?
-6=What value do we use as a target load factor? What happens if it is exceeded?
-7=What is rehashing?
-8=What are the advantages of each of the two collision resolution strategies over the other?
-9=What technique do dictionaries usually use?
-
 [coding]
 1=Review mergeSort?
 2=Review quickSort?
