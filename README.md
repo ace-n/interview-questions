@@ -1,0 +1,60 @@
+# Ace's interview questions
+These are the _conceptual_ "flashcard" questions (and answers) I use to prepare for software engineering interviews.
+
+These questions are intended to cover the conceptual background you'll need to succeed. They are _not_ a replacement for **solving practice problems** or **implementing basic algorithms** (e.g. sorting algorithms, binary search) yourself.
+
+## How I prepare for interviews
+_Caveat: most of this advice is geared towards junior/"new grad" interviews. More senior folks may still find it useful, however._
+
+### Part 1: conceptual questions
+1. Attempt to answer these questions from memory
+2. Review the answers I missed (usually via a script that records [in]correct answers)
+3. `GOTO 1` until I get every question right _more times than I've gotten it wrong_
+
+### Part 2: practice questions
+1. Look at [Glassdoor](https://glassdoor.com) or similar sites for interview questions asked by a particular company for a particular role.
+2. Try to find trends in the questions - types, difficulty, concepts, etc.
+3. Attempt to answer representative-sample questions before checking the (provided) answers
+4. Check the provided answers, and compare them to mine
+5. `GOTO 3` until I feel comfortable with a particular company's question level
+6. `GOTO 1` for every different company I'm interviewing with
+
+_You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege-effect/)._
+
+### Part 3: a few days before the interview
+1. Go over some common algorithms and implement them yourself:
+- Sorts (quicksort, mergesort, insertion sort)
+- Binary tree traversals (insertion, deletion, search)
+- Balanced binary tree (e.g. AVL tree) operations (insertion, deletion, search)
+2. Test them against common edge cases
+3. Tweak your implememtations until all your test cases pass
+4. Do any other last-minute prep **now**.
+
+### Part 3: the night before the interview
+1. _Do not prep any further._ (Ideally, you're fully prepared by this point anyway.)
+2. Do something _fun and relaxing_ to calm your nerves.
+3. Take care of your biological needs - make sure to get a good night's sleep.
+
+### Part 4: the day of the interview
+1. Have a solid breakfast.
+2. Remember that [stupid rejections happen to everyone](https://rejected.us/).
+3. Good luck! You'll do great. :)
+
+## Misc. stuff
+### Credits
+The questions are based off material from the following UIUC courses:
+- CS225 (Data Structures)
+- CS241 (System Programming)
+- CS473 (Algorithms II) courses.
+
+### License
+This content is licensed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+
+### Errata
+This repo is rarely updated, however I do keep an occasional eye out for pull requests - so feel free to send them.
+
+## Resources
+Here are some things that I've found helpful throughout my career:
+- [Steve Yegge's resume advice](https://steve-yegge.blogspot.com/2007/09/ten-tips-for-slightly-less-awful-resume.html)
+- [Jeff Erickson's algorithms book](https://algorithms.wtf)
+- [levels.fyi](https://levels.fyi)
