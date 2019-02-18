@@ -12,11 +12,11 @@ _Caveat: most of this advice is geared towards junior/"new grad" interviews. Mor
 3. `GOTO 1` until I get every question right _more times than I've gotten it wrong_
 
 ### Part 2: practice questions
-1. Look at [Glassdoor](https://glassdoor.com) or similar sites for interview questions asked by a particular company for a particular role.
+1. Look at [Glassdoor](https://glassdoor.com) or similar sites for interview questions asked by a _particular company_ for a _particular role_.
 2. Try to find trends in the questions - types, difficulty, concepts, etc.
-3. Attempt to answer representative-sample questions before checking the (provided) answers
+3. Attempt to answer representative-sample questions (from Glassdoor or other sites) before checking the (provided) answers
 4. Check the provided answers, and compare them to mine
-5. `GOTO 3` until I feel comfortable with a particular company's question level
+5. `GOTO 3` until I feel _comfortable_ and _confident_ with a particular company's question level
 6. `GOTO 1` for every different company I'm interviewing with
 
 _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege-effect/)._
@@ -42,10 +42,10 @@ _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege
 
 ## Misc. stuff
 ### Credits
-The questions are based off material from the following UIUC courses:
+The questions are based off material from the following [UIUC](https://illinois.edu) courses:
 - CS225 (Data Structures)
 - CS241 (System Programming)
-- CS473 (Algorithms II) courses.
+- CS473 (Algorithms II)
 
 ### License
 This content is licensed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
