@@ -33,7 +33,7 @@ _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege
 ### Part 3: the night before the interview
 1. _Do not prep any further._ (Ideally, you're fully prepared by this point anyway.)
 2. Do something _fun and relaxing_ to calm your nerves.
-3. Take care of your biological needs - make sure to get a good night's sleep.
+3. Get a good dinner and a good night's sleep.
 
 ### Part 4: the day of the interview
 1. Have a solid breakfast.
