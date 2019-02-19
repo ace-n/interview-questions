@@ -58,3 +58,5 @@ Here are some things that I've found helpful throughout my career:
 - [Steve Yegge's resume advice](https://steve-yegge.blogspot.com/2007/09/ten-tips-for-slightly-less-awful-resume.html)
 - [Jeff Erickson's algorithms book](https://algorithms.wtf)
 - [levels.fyi](https://levels.fyi)
+- [Interview mind map (a tiny bit Java-specific)](https://www.reddit.com/r/cscareerquestions/comments/6tc4uw/i_created_a_mind_map_of_nearly_all_the_concepts/)
+- [Anecdata: how to succeed in software engineering](https://www.reddit.com/r/cscareerquestions/comments/49iyhw/to_those_more_successful_than_most_how_do_you_get/)
