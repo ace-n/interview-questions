@@ -1,0 +1,159 @@
+[Test1]
+1A=rational numbers
+2A=yes
+3A=no
+4A=open; no
+5A=closed; yes
+6A=a^(bc)
+7A=a^(b+c)
+8A=log(ab)
+9A=log(a/b)
+10A=b*log(a)
+11A=-4
+12A=1
+13A=-3
+14A=2
+15A=p N !q
+15B=p ^ !q
+16A=!(a v b) = !a ^ !b, !(a ^ b) = !a v !b
+17A=the set(s) of items being considered
+18A=q --> p
+19A=p <-> q
+20A=iff.
+21A=composite
+22A=even
+23A=0
+24A=every integer
+25A=no; primes must >= 2
+26A=any integer >= 2 is the product of a unique set of primes
+27A=1
+28A=infinite
+29A=they have no common elements
+30A=the set of all objects it DOES NOT contain
+31A=yes
+32A=proper subsets cannot be identical to their supersets
+33A=xRy == yRx for all x,y
+34A=xRy != yRx for all x,y (except when x == y)
+35A=opposite of symmetric, when x == y
+36A=when it is onto AND one-to-one
+37A=when they are related in some order (either xRy or yRx)
+38A=inputs according to type signature
+39A=outputs according to type signature
+40A=input that created the output
+41A=set of possible (realistic) outputs of a function
+42A=c
+43A=underlined c
+44A=a proper subset != its superset
+45A=symmetric, antisymmetric
+46A=RAT
+47A=IRAT
+48A=RST
+49A=a comparable partial order
+50A=no output has multiple inputs
+51A=every output has an input
+
+[Test2]
+1A=the same set
+2A=permutation; n^r
+3A=a finite sequence of edges/nodes that connects two nodes (the ones at its endpoints)
+4A=when starting node = ending node; open
+5A=closed walk with >= 3 nodes where no middle (non-start/end) node is used more than once
+6A=a walk where nodes are used only once
+7A=a graph where a walk exists between every pair of nodes
+8A=dividing a graph into its biggest possible connected subgraphs
+9A=when it is not part of a cycle
+10A=a graph without cycles
+11A=longest possible distance between any 2 nodes
+12A=closed, walk, uses each edge exactly once
+13A=n+1
+14A=a graph that can be split into 2 subgraphs such that no nodes in a subgraph are connected
+15A=false
+16A=D+1
+17A=fast, fairly accurate
+18A=n(n+1)/2
+18B=What is the formula for the sum of 2^k (for k from 1 to n)?
+18C=2^k - 1
+19A=1 - 2^n
+20A=2(2^n - 1)
+
+[Test2_Round2]
+1A=always
+2A=when making proof simplifications that don't add anything new
+3A=directed edges can only go one way
+4A=a node connected to itself
+5A=multiple edges connecting to the same set of nodes
+6A=multi-edges, loops
+7A=sum of degrees = 2*edge count
+8A=complete graph with n nodes
+9A=circular graph with n nodes
+10A=wheel graph with n+1 nodes
+11A=complete bipartite graph where 1 subgraph has n nodes and the other has m nodes
+12A=fib(n) = fib(n-1) + fib(n-2)
+13A=fib(0) = 0, fib(1) = 1
+14A=n dimensional hypercube; 2^n
+15A=when each node has either 0 or m children
+16A=when all leaves have the same height
+17A=V=E+1
+18A=mi + 1
+
+[final_test1]
+1A=a = bq + r, 0 < r < b
+2A=!q --> !p
+3A=q --> p
+4A=p <--> q
+5A=there is no such thing as 'inverse'
+6A=tuples care about order and keep duplicates
+6B=tuples keep duplicates and care about order
+7A={(a,1,@), (a,1,#), (a,2,@), (a,2,#), (b,1,@), (b,1,#), (b,2,@), (b,2,#)}
+8A=complement of the set
+9A=no; sets can't have repeating elements, and the union of 2 sets is a set
+10A=empty
+11A=A
+12A=empty; A
+13A=|A|*|B|
+14A=Q
+15A=C
+16A=set of all elements related to X by some relation R
+
+[final_test2]
+1A=they have the same remainder when divided by k
+2A=it is both onto and one-to-one
+3A=if f(x) = f(y), then x must = y
+4A=g(f(y)) = y for all valid y
+5A=n^r
+6A=n!/(n-r)!
+7A=n choose r
+8A=n!/(r!*(n-r)!)
+9A=(n + r - 1) choose r
+10A=twice
+11A=the number of edges it is attached to
+12A=different node/edge counts, different set of vertex degree values, subgraphs present in one graph but not the other
+13A=using graph coloring
+14A=the chromatic number of graph G
+15A=F(n) = F(n-1) + F(n-2)
+16A=two children of the same parent
+17A=its leaves are at approximately the same height
+18A=0
+19A=0
+20A=yes
+21A=when it isn't part of a cycle
+22A=the empty string
+23A=the set of all finite-length strings with characters from A
+24A=a string of 1s and 0s
+
+[final_new]
+1A=exponential
+2A=set of problems for which "yes" answers are justified in polynomial time.
+3A=(definitely) exponential time, maybe polynomial time
+4A=a collection containing all subsets of A including the empty set
+5A=subsets
+6A=powerset of A
+7A=show that g(f(y)) = y for all valid y
+8A=show that if g(x) = g(y), then x must = y
+9A=sum from k=0 to n of (n choose k) * a^(n-k) * b^k
+10A=(n+1) choose k = n choose k + n choose (k-1)
+11A=a bijection exists between them
+12A=|A| <= |B|
+13A=|\bb{P}(A)| > |A| for all A
+14A=yes
+15A=because computer programs are finite (in length) and some functions are infinite
