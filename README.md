@@ -51,7 +51,7 @@ The questions are based off material from the following [UIUC](https://illinois.
 - CS241 (System Programming)
 
 ### License
-This content is licensed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+This content is licensed under an [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0).
 
 ### Errata
 This repo is rarely updated, however I do keep an occasional eye out for pull requests - so feel free to send them.
