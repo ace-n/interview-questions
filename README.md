@@ -3,6 +3,8 @@ These are the _conceptual_ "flashcard" questions (and answers) I use to prepare 
 
 These questions are intended to cover the conceptual background you'll need to succeed. They are _not_ a replacement for **solving practice problems** or **implementing basic algorithms** (e.g. sorting algorithms, binary search) yourself.
 
+> **Mid/Senior-level folks:** I recommend taking a look at Donne Martin's excellent [System Design primer](https://github.com/donnemartin/system-design-primer). The `Cloud` questions cover **my** knowledge gaps relative to that tutorial. _(Your knowledge gaps will almost certainly be different than mine - feel free to send a pull request with your own questions for things I didn't cover.)_
+
 ## How I prepare for interviews
 _Caveat: most of this advice is geared towards junior/"new grad" interviews. More senior folks may still find it useful, however._
 
@@ -43,9 +45,10 @@ _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege
 ## Misc. stuff
 ### Credits
 The questions are based off material from the following [UIUC](https://illinois.edu) courses:
+- CS173 (Discrete Mathematics)
 - CS225 (Data Structures)
+- CS233 (Computer Architecture)
 - CS241 (System Programming)
-- CS473 (Algorithms II)
 
 ### License
 This content is licensed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
