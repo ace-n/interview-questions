@@ -1,0 +1,292 @@
+[mt1-lesson1]
+1=What do computers use to represent information?
+2=What does a high voltage represent (in binary)? A low voltage?
+3=The output of a boolean function is specified purely by its _____ and _____.
+4=(Cheatsheet) For a function with n boolean variables, how many boolean functions exist?
+5=What is a literal?
+6=(Cheatsheet) What is the precedence (first --> last) of boolean operations? (Hint: grumpy cat)
+7=(Cheatsheet) Logic gates
+8=(Cheatsheet) On a logic gate drawing, what does the little dot on a wire mean?
+9=What is a circuit?
+10=What are Hardware Description Languages used for? (Hint: 'verification' is too specific)
+
+[mt1-lesson2]
+1=What makes a circuit combinational?
+2=What is "sum of products" form?
+3=What is NAND(x,y) equal to? (in terms of xy*+')
+
+[mt1-lesson3]
+1=(Cheatsheet) How many unique things can be represented with n bits?
+2=(Cheatsheet) Does the set of unsigned numbers include 0?
+3=What are words?
+
+[mt1-lesson4]
+1=What is the procedure for negating a 2's complement number?
+2=How do we tell if a 2's complement number is negative?
+3=What is the procedure for extending a 2's complement number?
+4=(Cheatsheet) When LEFT-shifting a 2's complement number, what do we set additional bits to? How about when RIGHT-shifting?
+
+[mt1-lesson5]
+1=What is a half-adder?
+2=What is a full adder?
+3=What is the relationship between a half-adder and a full adder?
+4=Is the CS398 implementation of a multi-bit adder (using ripple carrying) (relatively) fast? If not, what is a faster technique?
+5=What is the difference between the datapath and control signals?
+
+[mt1-lesson6]
+1=(Cheatsheet) What other gate can be used to implement a NOT gate?
+2=(Cheatsheet) When does overflow occur? (Hint: this is the ONLY time it does)
+3=In a multi-bit ALU, what is the condition for determining whether overflow occurred?
+
+[mt1-lesson7]
+1=What is propagation delay?
+2=What is a ring oscillator? What is it used for?
+3=How complicated is timing in reality (outside of CS398)?
+4=(Cheatsheet) What are the 3 properties a memory must have?
+5=What is a SR (set-reset) latch made up of?
+6=When does an SR latch's value become 0? 1?
+7=What happens when an SR latch's reset and set are both 1?
+8=What does it mean to say a circuit has feedback? Is this type of circuit combinational?
+9=What is the state of an SR latch?
+
+[mt1-lesson8]
+1=If a circuit isn't combinational, what is it? What's the difference between these two?
+2=What is the basic idea of synchronous design?
+3=How is synchronous design usually implemented?
+4=When do CS398's circuits update (relative to their clock signal)?
+5=What two things do synchronously designed circuits alternate between?
+6=What is a D flip flop?
+7=What is the special about SR/D latches "with enable"?
+8=What is a D latch with enable?
+9=What is a register? What is it used for?
+10=What is a RAM?
+11=What does the "random access" in RAM mean?
+12=What is one kind of RAM (Hint: that we have already studied)?
+13=Why does a register file need to have multiple read ports?
+14=What two inputs do decoders usually have? (Give their common names)
+15=What is a counter?
+
+[mt1-lesson9]
+1=A combinational circuit is to a boolean function as a sequential circuit is to a _____________.
+2=What is a sequence recognizer?
+
+[mt1-lesson10-11]
+1=What is the key feature that distinguishes a computer processor from other hardware systems?
+2=What is an Instruction Set Architecture (ISA)?
+3=What two things does an Instruction Set Architecture specify?
+4=What does "compiling" a program mean?
+5=Is machine code portable across platforms? Why (not)?
+6=What is Assembly language?
+7=What is a register-to-register architecture?
+8=(Cheatsheet) How many registers do MIPS processors have? How long are the registers?
+9=What is special about register 0 ($0)?
+10=What is the difference between R-type and I-type instructions?
+11=Which register is always a source register (with the exception of load-from-memory commands) for ARITHMETIC instructions?
+12=What is the nature (signed/unsigned, length) of an immediate?
+13=What two parameters does an ARITHMETIC MACHINE's instruction decoder take?
+14=Can we write to our instruction memory from within our program (in CS398 at least)?
+
+[mt1-lesson12]
+1=(Cheatsheet) How big is each location in instruction memory?
+2=How many bits/bytes does 1 MIPS instruction use? How many instruction memory locations is this?
+3=When is an instruction's starting address (within the instruction memory) valid?
+4=What is the purpose of the program counter?
+5=Why does a program counter only need to be (n-2) bits long for a memory with n-bit addresses?
+
+[mt1-lesson13-14]
+1=What is the J-type instruction used for? What is unique about it?
+2=What is the limitation of J-type instructions? How is this resolved?
+3=How are branches encoded? (specifically their jump amounts)
+4=(Cheatsheet) If a target label comes immediately after a branch, what would the jump offset be?
+5=How do we load more than the 16 least significant bits into a register?
+6=(Cheatsheet) Include comments from Lab7's decoder!
+
+[mt1-lesson15]
+1=What is the tradeoffs of main memory compared to register files?
+2=What is the core idea of a Harvard architecture?
+3=How much data memory does MIPS support? How many bytes does it support?
+4=When doing a byte write from a register to memory (eg. "sb"), which part of the register's value written to memory?
+5=What is the basic idea behind indexed addressing?
+6=(Cheatsheet) What's the difference between little endian and big endian?
+7=What does it mean for memory to be aligned?
+8=What kind of error occurs if memory isn't aligned?
+
+[mt2-lesson16-17]
+1=Where are all MIPS registers equivalent? Where are they not?
+2=What is global data?
+3=How are arrays in MIPS stored (in memory)? What functions access them?
+4=Can you access an array with a "move" function? Why (not)?
+5=What are pseudo-instructions?
+
+[mt2-lesson19]
+1=How are C-style strings encoded?
+2=When doing "x++" in C where x is a pointer of type T, how much does the memory address that x refers to increase by (in bytes)?
+3=In the context of Structs/Objects, what is "padding"?
+4=How can the amount of padding required by a Struct/Object be reduced?
+5=What does "dereferencing" mean? (Hint: w.r.t pointers)
+
+[mt2-lesson20]
+1=What is an ISA (instruction set architecture)? (Hint: interface)
+2=Can software tell the difference between two processors with the same ISA?
+3=(Cheatsheet) What is the difference between CISC and RISC computers?
+4=(Cheatsheet) What do CISC and RISC stand for?
+5=Why did RISC eclipse CISC? (two reasons)
+6=How similar are most ISAs?
+7=What is the purpose of a linker in the code compilation process? Why is it useful?
+8=In today's era of high level languages, what are the two main advantages of Assembly (compared to such languages)?
+
+[mt2-lesson21]
+1=Are most modern OSes single-taskers or multitaskers? (Hint: OSes, not processors)
+2=What is an interrupt?
+3=When switching between which program has access to the processor, what must the OS keep track of?
+4=(Cheatsheet) What are the two main ways for I/O devices to communicate with programs?
+5=(Cheatsheet): What are the three ways to transfer data between devices and (main) memory (ie. to do Memory-mapped I/O)?
+6=When using Memory-mapped I/O, the address space of the machine refers to two things. What are they?
+7=True/False: All Memory-mapped I/O devices only need one I/O address.
+8=Can multiple Memory-mapped IO devices (with different instructions) be accessed at once? Why (not)?
+9=(Cheatsheet) What is the difference between the two main ways that I/O devices communicate with programs (Memory-mapped and Isolated I/O)?
+10=(Cheatsheet) In the context of memory-I/O data transfer methods, what is Programmed I/O?
+11=(Cheatsheet) In the context of memory-I/O data transfer methods, what is Interrupt-driven I/O?
+12=(Cheatsheet): In the context of memory-I/O data transfer methods, what is Direct Memory Access?
+13=What is the difference between an Interrupt and an Exception?
+14=What are the two ways an exception can be resolved? (Hint: one is by the program itself, the other is by the OS)
+15=What is the Forward Compatibility problem, and how is it resolved?
+16=What two things does an interrupt handler need to know about an interrupt/exception?
+17=What is the role of co-processor 0?
+18=If an exception occurs, what is the exception code field set to? What if an interrupt occurs?
+19=What is an interrupt mask?
+
+[mt2-misc1]
+1=What does it mean if two machines are both Turing-complete?
+2=What are the two primary performance specifics for programs?
+3=What are the three main program-related performance factors?
+4=What is the "dynamic" instruction count?
+5=What is the "static" instruction count?
+6=Does the average CPI differ between programs? Why (not)?
+
+[mt2-misc2]
+1=The CPI of a given floating point op is {higher/lower/no different} than the CPI of its integer counterpart.
+2=What are the two main CPU-related performance factors?
+3=What is the CPI of an ideal (no stalling/memory slowage) single-cycle machine?
+4=What can cause the CPI of a single-cycle machine to be LESS than 1? (If nothing can, enter "nothing")
+5=What can cause the CPI of a single-cycle machine to be MORE than 1? (If nothing can, enter "nothing")
+6=What does the clock cycle time of a processor represent?
+7=Is it possible to optimize one CPU metric at the expense of another? (e.g. faster computations in exchange for greater memory requirements - or vice versa)
+8=When are two processors compatible?
+9=If two identical-ISA processors are given the same high-level program, what can we say (with certainty) about the processors and/or the low-level programs?
+
+[mt3-lesson23]
+1=What is the golden rule of performance optimization?
+2=What does gprof do?
+3=What does gcov do?
+4=When deciding what to optimize, is it sufficient to guess? If not, what [else] must be done?
+
+[mt3-lesson24+25]
+1=What is special about a single-cycle implementation/subset of an ISA?
+2=What is the period of a pipelined machine? (In terms of its individual cycles' periods)
+3=What is the execution time on an ideal pipeline? (Hint: there is 'boot time'...)
+4=When do structural hazards occur?
+5=When do data hazards occur?
+6=Why do all instructions have to go through all pipeline stages (even if they don't use a stage)?
+7=What are pipeline registers?
+8=Registers are written at the (beginning/end) of a clock cycle. (Hint: the Benny register)
+9=What is the key idea of forwarding?
+10=What does a forwarding unit do?
+11=How is forwarding implemented (other than the forwarding unit)?
+12=What are the two kinds of data hazards?
+13=When does an EX/MEM data hazard occur?
+14=When does a MEM/WB data hazard occur?
+15=What are the two main strategies for resolving data hazards in a pipelined machine? Which one of them is preferable?
+
+[mt3-lesson26]
+1=Which instructions can cause forwarding not to work?
+2=What is the key idea of stalling?
+3=What is a "true" data hazard? What technique is used to solve them?
+4=What is the "cascade effect" of stalling?
+5=When a nop occurs in a given stage, what happens to that stage's control signals?
+6=What does a hazard detection unit do?
+7=What is a control hazard?
+8=Is stalling a valid solution to control hazards? Do we (not) use it, and if so why (not)?
+9=What is the key idea behind branch prediction?
+10=If a branch prediction is wrong, what happens? (Hint: toilets)
+11=Most branches are predicted at (compile/run)-time.
+12=Why are branch mispredictions more damaging (to the overall speed of) longer pipelines?
+
+[mt3-lesson28]
+1=Why are deep (> 16) pipelines bad? (Hint: branch misprediction/flushing is valid but not what we want here)
+2=How do we predict when to take a branch dynamically?
+3=Can we store records of every single branch in memory? If not, what do we do instead?
+4=What is the use of the Branch Target Buffer (BTB)?
+5=If we remove stalls and flushes from a program, can we achieve a CPI of 1 on a non-superscalar processor?
+6=What are issue packets?
+7=What is a common dual-issue setup used for MIPS?
+8=If a sequence of instructions doesn't fit the specifications of an issue packet, what do we do?
+9=What are the two main drawbacks of issue packets?
+10=How does loop unrolling help speed up a program?
+11=What is the idea of register renaming? (w.r.t. loop unrolling)
+12=What is "superscalar" a shortened version of?
+13=What is the key idea of superscalar machines?
+14=What is out-of-order execution? What must be maintained?
+15=Are loads usually expensive?
+16=Are branches usually expensive?
+17=Are integer arithmetic operations expensive?
+
+[mt3-lesson29+30]
+1=Why is speed necessary in today's storage systems?
+2=Why is capacity necessary in today's storage systems?
+3=What is a cache?
+4=Why are caches useful in speeding up memory access times? (Hint: the answer is a common course 'slogan')
+5=What is the core idea of temporal locality?
+6=What is the core idea of spatial locality?
+7=What control flow constructs are (typically) good examples of locality?
+8=Why do we bother with a cache when we have registers? (2 reasons)
+9=How do caches take advantage of spatial locality?
+10=Do caches take additional time to read/write variables in the case of a cache miss?
+11=What is the hit rate of a typical cache?
+12=The number of cache blocks in a cache is usually a ____________.
+13=What does it mean to be a direct-mapped cache?
+14=What is the purpose of a tag?
+15=What is the purpose of a valid bit?
+16=What parameter(s) out of {tag, index, offset} must match something in the cache for a cache hit to occur?
+17=What is the simplest strategy for dealing with cache misses?
+18=When our cache gets full and we want to load a new block, what do we do?
+19=What is the disadvantage of using direct mapping? (Hint: direct mapping allows multi-value blocks)
+20=What is a fully associative cache?
+21=Why does a fully-associative cache make lookup O(n) [instead of direct mapping's O(1)]?
+22=What is a set-associative cache?
+23=What is the primary disadvantage of having set associative caches with more sets?
+
+[mt3-lesson31]
+1=In a write-back cache, what is the purpose of the dirty bit?
+2=What is the main drawback of a (simple) write-back cache? How can this be solved?
+3=What do the write-allocate/write-no-allocate properties decide?
+4=What do non-temporal store instructions do?
+5=What is the easiest way to take a cache miss into account? Why do we not do this?
+6=What is a non-blocking cache?
+7=What is hoisting? (Hint: w.r.t. non-blocking caches)
+8=Can hardware prefetching learn strides (e.g. x, x+2, x+4, x+6...)?
+9=What are the two uses of software prefetching?
+
+[mt3-lesson32]
+1=What is blocking?
+2=When is blocking useful? (Hint: consider iterating across rows, too)
+
+[mt3-lesson33-VirtMem]
+1=What two problems does virtual memory solve?
+2=What is the basic idea of virtual memory?
+3=How does the size of a virtmem page compare to a cache block?
+4=What cache layout (set-associative, fully associative, or direct mapping) is used for virtmem?
+5=Why does virtual memory not use a write-through policy?
+6=What two things does the page table (as a whole i.e. no subtables) map between?
+7=Why is the page table (as a whole i.e. no subtables) necessary?
+8=Do we need a "tag" for page table addresses? Why (not)?
+9=What is the point of the Transition Lookaside Buffer (TLB)?
+10=When do we need to "walk the page table"?
+11=When does a page fault occur?
+
+[mt3-lesson33-Disks]
+1=What is seeking?
+2=What is the primary reason disks are (so) slow?
+3=Why is sequential access of a disk faster than random access of a disk?
+4=What does RAID stand for?
+5=What is the core idea behind RAID?

@@ -1,0 +1,293 @@
+[mt1-lesson1]
+1A=voltages
+2A=1, 0
+3A=function, inputs
+4A=2^(2^n))
+5A=an input variable or its complement
+6A=not; and; or (NAO)
+7A=Just a reminder =)
+8A=NOT
+9A=a series of gates
+10A=describing circuits using text
+
+[mt1-lesson2]
+1A=output only depends on current input (after waiting long enough)
+2A=OR all True outcomes together
+3A=(x*y)'
+
+[mt1-lesson3]
+1A=2^n
+2A=yes
+3A=groups of multiple bits
+
+[mt1-lesson4]
+1A=NOT (negate) every bit, then add 1
+2A=isNegative = (MSB == 1)
+3A=add (as a string) the MSB to the front of the number until the desired bit length is reached
+4A=0; MSB
+
+[mt1-lesson5]
+1A=a module that adds two input bits to make a sum and carryout
+2A=a module that adds 3 input bits to make a sum and carryout
+3A=a full adder can be built using 2 half-adders
+4A=no; carry lookahead
+5A=datapath signals carry data; control signals tell the module what to do with it
+
+[mt1-lesson6]
+1A=NOR
+2A=when the result of an operation isn't representable using the available number of bits
+3A=xor'ing the last 2 carry bits
+
+[mt1-lesson7]
+1A=the time a circuit takes to react to changes in input
+2A=an odd # of NOT gates in a loop; timing gates
+3A=very
+4A=hold a value, allow reads, allow writes
+5A=2 cross-coupled NOR gates
+6A=when reset = 1; when set = 1
+7A=HL3 gets cancelled
+8A=it depends on its past state(s); no
+9A=the value it stores
+
+[mt1-lesson8]
+1A=sequential; sequential depends on previous state(s) but combinational doesn't
+2A=all elements are updated simultaneously
+3A=clock signals (waves with constant period)
+4A=on the positive edge of the clock signal
+5A=storage, computation
+6A=a latch that updates on a clock's positive edge
+7A=they ignore input when enable=0
+8A=an SR w/enable where reset = !set
+9A=a sequence of multiple D flip-flops; storing multiple bits
+10A=a memory device that stores words referenced by addresses
+11A=any part of the memory can be read/written quickly
+12A=register file
+13A=so we can do operations between values in different addresses
+14A=select, enable
+15A=a set of half adders connected to a set of d flip-flops
+
+[mt1-lesson9]
+1A=finite state machine
+2A=a sequential circuit that detects a given bit sequence
+
+[mt1-lesson10-11]
+1A=programmability
+2A=an interface between software and hardware
+3A=what operations exist, the effects of given operations
+4A=converting high level code (e.g. C) into machine code
+5A=no; different processors have different ISAs
+6A=a human-readable translation of machine code
+7A=operations use values in registers (or sometimes constants) when getting/setting data
+8A=32 32-bit registers
+9A=its always 0
+10A=R-type accepts 3 registers; I-type accepts 2 registers + 1 constant
+11A=rs
+12A=signed (2's complement) 16-bit word
+13A=opcode, funct
+14A=no
+
+[mt1-lesson12]
+1A=1 byte
+2A=32 bits = 4 bytes = 4 locations
+3A=when it's divisible by 4
+4A=keep track of which instruction to execute next
+5A=its always a multiple of 4, so its last 2 bits are always 0
+
+[mt1-lesson13-14]
+1A=encoding jumps; very long immediate
+2A=Can only jump within current section (of 16) of instruction memory; using jr (jump register)
+3A=jump amounts are relative to the address of the branch instruction
+4A=0
+5A=lui (load upper immediate)
+6A=JUST A REMINDER...
+
+[mt1-lesson15]
+1A=cheaper, denser, slower
+2A=programs and data are stored separately
+3A=4 GB; 2^32
+4A=the 8 least significant bits
+5A=memory is located using a signed offset constant and a register value
+6A=big endian stores the ends of words at the "big end" (bigger addressed end) of memory; little endian does the opposite
+7A=words must start at addresses divisible by 4
+8A=bus error
+
+[mt2-lesson16-17]
+1A=hardware; software
+2A=data defined outside of functions
+3A=contiguously; load/store functions
+4A=No; they are stored in memory, which must be loaded into a register
+5A=instructions that are compiled into one or more simpler instructions
+
+[mt2-lesson19]
+1A=an array of bytes ending in a 0 byte
+2A=sizeof(T)
+3A=null data used to "naturally align" object's data
+4A=reordering fields
+5A=storing/loading a pointer's value
+
+[mt2-lesson20]
+1A=interface between software and hardware
+2A=no
+3A=CISC has more instructions and simpler, slower machines than RISC
+4A=complex instruction set computer; reduced instruction set computer
+5A=higher-level languages were more popular; these compiled into simpler instructions which are cheaper to implement
+6A=very
+7A=link compiled source files together; avoids recompiling unchanged source files
+8A=expressiveness, optimization
+
+[mt2-lesson21]
+1A=multitaskers
+2A=a way for the OS to stop a running program
+3A=a program's register values // and NOT its memory values
+4A=memory-mapped I/O, isolated I/O
+5A=Programmed I/O, Interrupt-driven I/O, direct memory access
+6A=memory, I/O devices
+7A=False
+8A=No; the CPU can't give them their different instructions simultaneously
+9A=Isolated I/O uses different load/store instructions for I/O and memory while Memory-mapped I/O does not
+10A=CPU continually asks device for input and updates as necessary
+11A=CPU is interrupted when I/O values change
+12A=a simple processor takes instructions from the CPU and interrupts it when I/O values change
+13A=interrupts are normal, exceptions indicate problems in programs
+14A=program can sometimes fix the error itself; if the program can't, OS kills the program
+15A=when new instructions are added to an ISA, software emulates them for machines with older versions of said ISA
+16A=cause, location in code
+17A=a processor that handles interrupts/exceptions
+18A=exception type; 0000 (4 0 bits)
+19A=A 2-byte value that determines which interrupts a processor responds to
+
+[mt2-misc1]
+1A=they can compute the same things (ignoring memory/processor specs)
+2A=latency, throughput
+3A=dynamic instruction count, kinds of instructions used, time per CPU clock-cycle
+4A=the number of instructions executed
+5A=the number of instructions in a file
+6A=yes; instruction type/complexity differs
+
+[mt2-misc2]
+1A=higher
+2A=average CPI (for a given program), clock frequency
+3A=1
+4A=memory stalls, slow instructions
+5A=if its superscalar
+6A=minimum time required for the CPU to do any work
+7A=usually
+8A=when they implement the same ISA
+9A=they will have identical low-level programs
+
+
+[mt3-lesson23]
+1A=make the common case fast
+2A=measures the speed of your code
+3A=measures how frequently parts of your code were executed
+4A=no; collect data
+
+[mt3-lesson24+25]
+1A=all instructions run in the same amount of time
+2A=the largest cycle period
+3A=time to fill pipeline + 1 cycle per instruction thereafter
+4A=when multiple instructions can't be executed at once
+5A=when an instruction needs data that isn't yet available
+6A=each stage can only handle one instruction at a time
+7A=registers that store values between stages of the pipeline
+8A=beginning
+9A=bypass memory and pass outputs directly to dependent instructions
+10A=selects the correct ALU inputs for the execution (EX) stage
+11A=two muxes - one for each ALU input
+12A=EX/MEM, MEM/WB
+13A=RAW
+14A=WWR
+15A=forwarding, stalling; forwarding
+
+[mt3-lesson26]
+1A=memory loads/stores
+2A=when a dependency occurs, wait for it to be resolved
+3A=a data hazard where the data required is completely unavailable; stalling
+4A=stalling an instruction delays subsequent instructions
+5A=they become 0
+6A=controls when the PC and IF/ID registers can be updated based on previous instructions/stall state
+7A=when a branch decision can't be made in time to avoid loading unnecessary instructions
+8A=yes; we don't because it's slow (compared to branch prediction)
+9A=if our prediction is right, execution doesn't slow down
+10A=the instructions later in the pipeline are flushed/discarded
+11A=run
+12A=the incorrect instruction flushing takes longer
+
+[mt3-lesson28]
+1A=register latency limits things; power consumption
+2A=do what that particular branch did most commonly during its last 4 times
+3A=no; store the recently-used ones in a collision-allowed hash table
+4A=since branch targets isn't available at branch prediction time, they need to be stored in the BTB
+5A=yes
+6A=groups of instructions that can be added to the pipeline simultaneously 
+7A=ALU/branch op followed by load/store op
+8A=pad it with nops
+9A=more hazards, more aggressive scheduling required
+10A=makes it more parallel
+11A=use different registers for each copy of the loop
+12A=dynamic multiple issue
+13A=CPU decides how many instructions to issue per cycle to avoid hazards
+14A=CPU executes instructions out of order to avoid stalls; write-to-register order
+15A=yes
+16A=if they're mispredicted
+17A=no
+
+[mt3-lesson29+30]
+1A=fast CPUs need fast memory
+2A=many modern applications of CPUs are data-intensive
+3A=a small amount of fast, expensive memory
+4A=they make the common case faster
+5A=programs usually read/write an address several times in a short period of time
+6A=programs usually end up using memory that is close to already-used memory
+7A=loops
+8A=registers frequently aren't enough; you can't point to them
+9A=they load entire blocks of memory all at once
+10A=yes
+11A=> 95%
+12A=power of 2
+13A=each memory address maps to 1 cache block
+14A=distinguishes between different memory addresses that have the same cache address
+15A=record whether that cache value has been initialized
+16A=tag, index
+17A=stall until data is loaded
+18A=overwrite the least recently used (LRUed) cache block
+19A=values can get repeatedly read and written due to collisions ("trashing")
+20A=a cache where data can be stored in any cache block
+21A=a value could be anywhere in the cache, so we have to check each one's tag
+22A=a cache where data maps to a specific set, but can be fully associative within that set
+23A=more expensive
+
+[mt3-lesson31]
+1A=to indicate whether or not a cache block has been written to
+2A=evicting a block requires additional memory ops; do those ops when memory is idle
+3A=whether or not to add addresses to the cache when they are written to
+4A=tell write-allocate caches not to store values in the cache on write
+5A=stall until value is available; value isn't always necessary to move on
+6A=a cache that continues on a cache miss if possible
+7A=putting more time in between loads and their dependencies
+8A=yes
+9A=non-stride/stream data access, linked data structures
+
+[mt3-lesson32]
+1A=iterating through blocks of an array to increase temporal locality
+2A=when iterating across rows isn't possible
+
+[mt3-lesson33-VirtMem]
+1A=programs larger than main memory; multiple programs running at once
+2A=virtual (program) addresses map to physical memory (or disk)
+3A=VM page >>> cache block
+4A=fully associative
+5A=writing back to disk is slow
+6A=virtual and physical memory
+7A=since VM is fully associative, we need to store the locations of addresses (hence the page table)
+8A=no; the virtual page # (VPN) does everything for us
+9A=page tables can be nested, so this caches the start/endpoints of page table paths
+10A=when a path isn't in the TLB
+11A=when a requested page must be retrieved from disk
+
+[mt3-lesson33-Disks]
+1A=moving the arm towards/away from the center of the disk
+2A=moving the arm to the proper sector is slow
+3A=it minimizes the amount of moves the arm has to make
+4A=redundant array of inexpensive disks
+5A=adding a few extra disks as backups is cheaper than making disks themselves more reliable
