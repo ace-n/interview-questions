@@ -30,7 +30,7 @@ _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege
 - Balanced binary tree (e.g. AVL tree) operations (insertion, deletion, search)
 2. Test them against common edge cases
 3. Tweak your implememtations until all your test cases pass
-4. Do any other last-minute prep **now**.
+4. Do any other last-minute prep (e.g. reading company engineering blogs) **now**.
 
 ### Part 3: the night before the interview
 1. _Do not prep any further._ (Ideally, you're fully prepared by this point anyway.)
