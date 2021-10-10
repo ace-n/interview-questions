@@ -32,7 +32,7 @@
 11=Do pthreads share stack(s)?
 12=Do pthreads share heap(s)?
 13=What does sbrk() do to ensure OS security?
-14=Is there anything wrong with �realloc(array, (size ^ 2) * SZ_OF_ELEM)�?
+14=Is there anything wrong with "realloc(array, (size ^ 2) * SZ_OF_ELEM)"?
 15=What are explicit free lists?
 16=What do boundary tags indicate? Why is this information useful?
 17=What are implicit free lists?
@@ -41,7 +41,7 @@
 20=What is a buddy allocator?
 21=What are the pros/cons of buddy allocators?
 22=How can boundary tags be hacked?
-23=What prevents me from reading someone else�s memory (i.e. what sends me the SIGSEGV)?
+23=What prevents me from reading someone else's memory (i.e. what sends me the SIGSEGV)?
 24=What are pages?
 25=How can we communicate with other pthreads?
 26=What is pthread_join()?
@@ -51,10 +51,10 @@
 30=What is the hierarchichal structure of pthreads?
 31=What does pthread_cancel() do?
 32=Why do we usually avoid pthread_cancel()?
-33=What is the primary difference between returning and pthread_exit�ing?
+33=What is the primary difference between returning and pthread_exit'ing?
 34=When does pthread_exit() terminate a program?
 35=When does return terminate a program
-36=What happens if we don�t join on pthreads?
+36=What happens if we don't join on pthreads?
 37=What happens if two threads try to pthread_join another one?
 38=How do we protect against thread-unsafe constructs in C?
 39=Is using strtok()/asctime()/etc. in multiple threads dangerous? If so, why?

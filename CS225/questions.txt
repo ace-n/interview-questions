@@ -1,5 +1,5 @@
 [trees_intro]
-1=IGNORE
+1=What is the standard CS225 implementation of a level-order traversal?
 2=What is the acronym for a stack? (*IFO)? A queue?
 3=How can a queue be made out of stacks?
 4=What does it mean if a graph is rooted?
@@ -16,7 +16,7 @@
 15=What is a complete tree?
 16=What is a perfect tree?
 17=IGNORE
-18=How many nodes are there in a full n-ary tree?
+18=How many nodes are there in a full binary tree?
 19=What properties (full, complete, perfect) apply to an empty tree?
 20=Why is a full tree not necessarily a complete tree?
 21=What is a dictionary?
@@ -24,14 +24,13 @@
 23=In a traversal, how many times is each node visited?
 24=What are the four types of traversals?
 25=What is a level-order traversal?
-26=What is the standard CS225 implementation of a level-order traversal?
 
 [binarytrees]
 1=What is a binary tree?
 2=If a binary tree has n data items, it has how many null pointers?
 3=What is a binary search tree?
 4=In a BST, how is a no-child/one-child removal done?
-5=In a BST, how is a two-child removal done? What must we change besides the locations that pointers point to?
+5=In a BST, how is a two-child removal done?
 6=Why is inserting into an array O(n)?
 
 [btrees]
@@ -104,7 +103,7 @@
 7=Why do we have to provide union() with representative values (as opposed to any old value from the set)?
 8=What are the three operations that the disjoint set ADT supports?
 9=What does makeSet(elem) do?
-10=What are the performance characteristics of a disjoint set ADT using a mapping of keys/indices to representative values (the 'naive implementation')?
+10=What are the performance characteristics of a disjoint set ADT using a direct mapping of keys/indices to representative values (the 'naive implementation')?
 11=What are the performance characteristics of a disjoint set ADT using an uptree and NO other optimizations?
 12=What are the performance characteristics of a disjoint set ADT using an OPTIMIZED (smart unions + path compression) uptree?
 13=How can we store data at the roots/representative values of uptrees in an array-based implementation? What class of techniques require this?
@@ -160,19 +159,15 @@
 37=Summarize Kruskal's algorithm.
 38=What is the time complexity of Kruskal's algorithm for each PQ variant?
 39=Summarize Prim's algorithm.
-40=IGNORE
-41=IGNORE
-42=IGNORE
-43=IGNORE
-44=IGNORE
+40=When does no single-source shortest path exist in a graph?
+41=How does Djikstra's algorithm differ from Prim's algorithm?
+42=Is Djikstra's algorithm safe for use with negative edges?
+43=In Djikstra's algorithm, when can we stop considering a node?
+44=What is the purpose of Djikstra's algorithm?
 45=According to CS225, what makes a graph sparse?
 46=When storing directed graphs in an adjacency matrix, what is the convention regarding rows and columns?
 47=What is the single-source shortest path problem?
-48=When does no single-source shortest path exist in a graph?
-49=How does Djikstra's algorithm differ from Prim's algorithm?
-50=Is Djikstra's algorithm safe for use with negative edges?
-51=In Djikstra's algorithm, when can we stop considering a node?
-52=What is the purpose of Djikstra's algorithm?
+
 
 [coding]
 1=Review mergeSort?
