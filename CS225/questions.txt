@@ -15,7 +15,7 @@
 14=What is a full tree?
 15=What is a complete tree?
 16=What is a perfect tree?
-17=IGNORE
+17=What is a level-order traversal?
 18=How many nodes are there in a full binary tree?
 19=What properties (full, complete, perfect) apply to an empty tree?
 20=Why is a full tree not necessarily a complete tree?
@@ -23,7 +23,6 @@
 22=How long should tree traversals take?
 23=In a traversal, how many times is each node visited?
 24=What are the four types of traversals?
-25=What is a level-order traversal?
 
 [binarytrees]
 1=What is a binary tree?
@@ -138,11 +137,11 @@
 16=How does an adjacency matrix store a graph?
 17=When an adjacency matrix expands, how much bigger does it become?
 18=What are the efficiencies of insert/remove for a graph ADT based on an edge list?
-19=IGNORE
+19=What is the single-source shortest path problem?
 20=What are the efficiencies of insert/remove for a graph ADT based on an adjacency matrix?
 21=How does an adjacency list store a graph?
 22=What are the efficiencies of insert/remove for a graph ADT based on an adjacency list?
-23=IGNORE
+23=When storing directed graphs in an adjacency matrix, what is the convention regarding rows and columns?
 24=What does it mean to say that traversals must honor the graph's connectivity? Why is this important?
 25=What are the key implementation assumptions when doing BFS and DFS?
 26=Does BFS use a stack or a queue? DFS?
@@ -152,7 +151,7 @@
 30=What is a discovery edge?
 31=What is a cross edge?
 32=What is special about discovery edges (vs. any old edge)?
-33=IGNORE
+33=According to CS225, what makes a graph sparse?
 34=What is a minimum spanning tree (MST)?
 35=What is the time complexity of most MST algorithms?
 36=How do we break ties in MST algorithms?
@@ -164,10 +163,6 @@
 42=Is Djikstra's algorithm safe for use with negative edges?
 43=In Djikstra's algorithm, when can we stop considering a node?
 44=What is the purpose of Djikstra's algorithm?
-45=According to CS225, what makes a graph sparse?
-46=When storing directed graphs in an adjacency matrix, what is the convention regarding rows and columns?
-47=What is the single-source shortest path problem?
-
 
 [coding]
 1=Review mergeSort?
