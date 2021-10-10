@@ -13,8 +13,31 @@ _Caveat: most of this advice is geared towards junior/"new grad" interviews. Mor
 2. Review the answers I missed (usually via a script that records [in]correct answers)
 3. `GOTO 1` until I get every question right _more times than I've gotten it wrong_
 
+#### Subject matter
+##### Algorithms-based interview
+> Review **all** the `Cloud` questions
+>
+> Review **all** the `CS225` questions.
+>
+> Review the following `CS241` sections:
+> - quiz4-part1
+> - quiz4-part2
+> - quiz6-deadlock
+> - quiz6-virtualMemory
+> - quiz7-networking1
+> - quiz7-networking3 _(ignore `getaddrinfo()` stuff)_
+> - quiz7-scheduling
+> - quiz8-raid
+> - final_misc _(ignore C-specific stuff)_
+> **If you have time**, review the following `CS241` sections:
+> - quiz8-files3
+> - quiz8-files4
+
+##### DevOps/Embedded Systems/C-based interview
+> Review **all** the `CS225`, `CS233`, and `CS241` questions.
+
 ### Part 2: practice questions
-1. Look at [Glassdoor](https://glassdoor.com) or similar sites for interview questions asked by a _particular company_ for a _particular role_.
+1. Look at [Glassdoor](https://glassdoor.com), [LeetCode](https://leetcode.com) or similar sites for interview questions asked by a _particular company_ for a _particular role_.
 2. Try to find trends in the questions - types, difficulty, concepts, etc.
 3. Attempt to answer representative-sample questions (from Glassdoor or other sites) before checking the (provided) answers
 4. Check the provided answers, and compare them to mine
@@ -29,8 +52,13 @@ _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege
 - Binary tree traversals (insertion, deletion, search)
 - Balanced binary tree (e.g. AVL tree) operations (insertion, deletion, search)
 2. Test them against common edge cases
+<<<<<<< Updated upstream
 3. Tweak your implememtations until all your test cases pass
 4. Do any other last-minute prep (e.g. reading company engineering blogs) **now**.
+=======
+3. Tweak your implementations until all your test cases pass
+4. Do any other last-minute prep **now**.
+>>>>>>> Stashed changes
 
 ### Part 3: the night before the interview
 1. _Do not prep any further._ (Ideally, you're fully prepared by this point anyway.)
