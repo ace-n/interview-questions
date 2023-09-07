@@ -3,7 +3,7 @@ These are the _conceptual_ "flashcard" questions (and answers) I use to prepare 
 
 These questions are intended to cover the conceptual background you'll need to succeed. They are _not_ a replacement for **solving practice problems** or **implementing basic algorithms** (e.g. sorting algorithms, binary search) yourself.
 
-> **Mid/Senior-level folks:** I recommend taking a look at Donne Martin's excellent [System Design primer](https://github.com/donnemartin/system-design-primer). The `Cloud` questions cover **my** knowledge gaps relative to that tutorial. _(Your knowledge gaps will almost certainly be different than mine - feel free to send a pull request with your own questions for things I didn't cover.)_
+> **Mid/Senior-level folks:** I recommend taking a look at Donne Martin's excellent [System Design primer](https://github.com/donnemartin/system-design-primer). The `Cloud` questions cover **my** knowledge gaps relative to that tutorial. _(Your knowledge gaps will be different than mine - feel free to send PRs with your own questions for things I didn't cover.)_
 
 ## How I prepare for interviews
 _Caveat: most of this advice is geared towards junior/"new grad" interviews. More senior folks may still find it useful, however._
@@ -52,13 +52,8 @@ _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege
 - Binary tree traversals (insertion, deletion, search)
 - Balanced binary tree (e.g. AVL tree) operations (insertion, deletion, search)
 2. Test them against common edge cases
-<<<<<<< Updated upstream
-3. Tweak your implememtations until all your test cases pass
-4. Do any other last-minute prep (e.g. reading company engineering blogs) **now**.
-=======
 3. Tweak your implementations until all your test cases pass
-4. Do any other last-minute prep **now**.
->>>>>>> Stashed changes
+4. Do any other last-minute prep (e.g. reading company engineering blogs) **now**.
 
 ### Part 3: the night before the interview
 1. _Do not prep any further._ (Ideally, you're fully prepared by this point anyway.)
@@ -72,11 +67,17 @@ _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege
 
 ## Misc. stuff
 ### Credits
-The questions are based off material from the following [UIUC](https://illinois.edu) courses:
+The questions are based off material from the following sources:
+
+#### [UIUC](https://illinois.edu) courses
 - CS173 (Discrete Mathematics)
 - CS225 (Data Structures)
 - CS233 (Computer Architecture)
 - CS241 (System Programming)
+
+#### Public Resources
+- [System Design primer](https://github.com/donnemartin/system-design-primer) by Donne Martin
+- [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/) by Microsoft
 
 ### License
 This content is licensed under an [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0).
@@ -91,3 +92,6 @@ Here are some things that I've found helpful throughout my career:
 - [levels.fyi](https://levels.fyi)
 - [Interview mind map (a tiny bit Java-specific)](https://www.reddit.com/r/cscareerquestions/comments/6tc4uw/i_created_a_mind_map_of_nearly_all_the_concepts/)
 - [Anecdata: how to succeed in software engineering](https://www.reddit.com/r/cscareerquestions/comments/49iyhw/to_those_more_successful_than_most_how_do_you_get/)
+
+Here are some useful resources to review when preparing for an interview:
+- **Mid/Senior folks:** [common cache types](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one)
