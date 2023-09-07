@@ -16,7 +16,7 @@
 15=What is a complete tree?
 16=What is a perfect tree?
 17=What is a level-order traversal?
-18=How many nodes are there in a full binary tree?
+18=How many nodes are there in a perfect binary tree?
 19=What properties (full, complete, perfect) apply to an empty tree?
 20=Why is a full tree not necessarily a complete tree?
 21=What is a dictionary?
@@ -37,7 +37,7 @@
 2=What are the min and max number of children in a non-internal and non-root B-tree node?
 3=What are the min and max number of children in a B-tree's ROOT node?
 4=In a B-tree, what variable represents the 'order' of the tree?
-5=When are B-trees used? Why
+5=When are B-trees used? Why?
 6=What is the total time to search a B-Tree using BINARY search at its nodes?
 7=What is the total time to search a B-Tree using LINEAR search at its nodes?
 8=Why are balanced trees useful?

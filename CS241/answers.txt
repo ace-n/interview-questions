@@ -270,7 +270,7 @@
 8A=links a socket to a hostname/port
 9A=set size of listen queue
 10A=128+
-11A=it's moved to an unused port for future communication
+11A=it's moved to an unused FD for future communication
 12A=no
 13A=wait for new connection requests and assign them to their own FD
 14A=we MUST use the FD it returns, NOT the server's socket FD

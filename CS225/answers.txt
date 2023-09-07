@@ -86,7 +86,7 @@
 10A=insert a value as a child of a leaf, then heapify it up
 11A=shift a value up/down in the tree until the heap is once again valid
 12A=O(1) insert, O(n) remove
-13A=set root to rightmost leaf, heapifyDown from root, return original root
+13A=set root value to rightmost leaf's value, heapifyDown new root, return original root value
 14A=sort data, repeated insertion, heapifyDown the first 1/2 of underlying array
 15A=heapifyDown the first half of the underlying array; O(n)
 16A=continually remove and store min from a heap of (to-be-sorted) data

@@ -133,7 +133,7 @@
 
 [quiz6-deadlock]
 1=What are Coffman conditions conditions for?
-2=What are the 4 conditions for deadlock?
+2=What are the 4 conditions for deadlock? (Hint: 'Monday Night Combat: Heroes')
 3=What must happen for circular wait to occur?
 4=What is meant by hold and wait?
 5=What is meant by no preemption?
@@ -260,7 +260,7 @@
 17=What two types of address can getaddrinfo() accept?
 
 [quiz7-networking3]
-1=What are the 4 parts to an HTTP request (in order)?
+1=What are the 4 parts of HTTP request format (in order)?
 2=How many digits does an HTTP response code have?
 3=What do "htons" and its ilk do?
 4=What class of machines actually need "htons" et al. (among others)?
@@ -479,7 +479,7 @@
 24=What C command can we use to redirect stdout?
 25=Which signals can be caught or ignored?
 26=What is the purpose of sigaction()'s sa_mask property?
-27=What is the Banker�s algorithm do?
+27=What does the Banker's algorithm do?
 28=What are the phases of the TCP handshake?
 29=What are the pros/cons of select()?
 30=What are the pros/cons of epoll()?
