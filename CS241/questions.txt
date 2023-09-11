@@ -144,7 +144,7 @@
 1=What are the 2 main advantages of Virtual Memory?
 2=What is the MMU?
 3=When does the MMU interrupt the CPU (if at all)?
-4=IGNORE
+4=What is the purpose of the NX bit? Where is it stored?
 5=What is a page?
 6=How big are pages on a typical Linux OS?
 7=How many pages does a typical Linux OS use? (HINT: Show equation!)
@@ -162,7 +162,6 @@
 19=What are the two ways processes can share memory?
 20=When can a process use mmap()?
 21=What is the purpose of the Dirty bit? Where is it stored?
-22=What is the purpose of the NX bit? Where is it stored?
 
 [quiz6-pipes]
 1=What are pipes?
