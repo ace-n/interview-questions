@@ -4,10 +4,13 @@ These are the _conceptual_ "flashcard" questions (and answers) I use to prepare 
 These questions are intended to cover the conceptual background you'll need to succeed. They are _not_ a replacement for **solving practice problems** or **implementing basic algorithms** (e.g. sorting algorithms, binary search) yourself.
 
 > **Mid/Senior-level folks:** I recommend taking a look at the following two resources:
-- Donne Martin's excellent [System Design primer](https://github.com/donnemartin/system-design-primer), **and**
-- [Keyvan Akbari's notes](https://github.com/keyvanakbary/learning-notes/blob/master/books/designing-data-intensive-applications.md) on Martin Fowler's **Designing Data-Intensive Applications** ([Amazon](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1098119061), [PDF](https://github.com/letthedataconfess/Data-Engineering-Books/blob/main/Book-2Designing-data-intensive-applications.pdf))
+> - Donne Martin's excellent [System Design primer](https://github.com/donnemartin/system-design-primer), **and**
+> - [Keyvan Akbari's notes](https://github.com/keyvanakbary/learning-notes/blob/master/books/designing-data-intensive-applications.md) on Martin Fowler's **Designing Data-Intensive Applications** ([Amazon](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1098119061), [PDF](https://github.com/letthedataconfess/Data-Engineering-Books/blob/main/Book-2Designing-data-intensive-applications.pdf))
 
 The `Cloud` questions cover **my** knowledge gaps relative to those resources. _(Your knowledge gaps will be different than mine - feel free to send PRs with your own questions for things I didn't cover.)_
+
+## Formatting
+These questions are formatted as numbered `INI` files. The `questions.ini` files contain the questions, while the `answers.ini` files contain their answers. 🙂
 
 ## How I prepare for interviews
 _Caveat: most of this advice is geared towards junior/"new grad" interviews. More senior folks may still find it useful, however._
@@ -18,9 +21,10 @@ _Caveat: most of this advice is geared towards junior/"new grad" interviews. Mor
 3. `GOTO 1` until I get every question right _more times than I've gotten it wrong_
 
 #### Subject matter
-##### Algorithms-based interview
+##### System design interviews
 > Review **all** the `Cloud` questions
->
+
+##### Algorithms interviews
 > Review **all** the `CS225` questions.
 >
 > Review the following `CS241` sections:
@@ -33,11 +37,12 @@ _Caveat: most of this advice is geared towards junior/"new grad" interviews. Mor
 > - quiz7-scheduling
 > - quiz8-raid
 > - final_misc _(ignore C-specific stuff)_
+>
 > **If you have time**, review the following `CS241` sections:
 > - quiz8-files3
 > - quiz8-files4
 
-##### DevOps/Embedded Systems/C-based interview
+##### DevOps/Embedded Systems/C-based interviews
 > Review **all** the `CS225`, `CS233`, and `CS241` questions.
 
 ### Part 2: practice questions
@@ -54,7 +59,9 @@ _You can also do step 4 [in groups](http://ideas.time.com/2011/11/30/the-protege
 1. Go over some common algorithms and implement them yourself:
 - Sorts (quicksort, mergesort, insertion sort)
 - Binary tree traversals (insertion, deletion, search)
+- Bloom filters
 - Balanced binary tree (e.g. AVL tree) operations (insertion, deletion, search)
+- Kadane's and Manacher's algorithms
 2. Test them against common edge cases
 3. Tweak your implementations until all your test cases pass
 4. Do any other last-minute prep (e.g. reading company engineering blogs) **now**.
