@@ -3,7 +3,11 @@ These are the _conceptual_ "flashcard" questions (and answers) I use to prepare 
 
 These questions are intended to cover the conceptual background you'll need to succeed. They are _not_ a replacement for **solving practice problems** or **implementing basic algorithms** (e.g. sorting algorithms, binary search) yourself.
 
-> **Mid/Senior-level folks:** I recommend taking a look at Donne Martin's excellent [System Design primer](https://github.com/donnemartin/system-design-primer). The `Cloud` questions cover **my** knowledge gaps relative to that tutorial. _(Your knowledge gaps will be different than mine - feel free to send PRs with your own questions for things I didn't cover.)_
+> **Mid/Senior-level folks:** I recommend taking a look at the following two resources:
+- Donne Martin's excellent [System Design primer](https://github.com/donnemartin/system-design-primer), **and**
+- [Keyvan Akbari's notes](https://github.com/keyvanakbary/learning-notes/blob/master/books/designing-data-intensive-applications.md) on Martin Fowler's **Designing Data-Intensive Applications** ([Amazon](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1098119061), [PDF](https://github.com/letthedataconfess/Data-Engineering-Books/blob/main/Book-2Designing-data-intensive-applications.pdf))
+
+The `Cloud` questions cover **my** knowledge gaps relative to those resources. _(Your knowledge gaps will be different than mine - feel free to send PRs with your own questions for things I didn't cover.)_
 
 ## How I prepare for interviews
 _Caveat: most of this advice is geared towards junior/"new grad" interviews. More senior folks may still find it useful, however._
@@ -78,6 +82,7 @@ The questions are based off material from the following sources:
 #### Public Resources
 - [System Design primer](https://github.com/donnemartin/system-design-primer) by Donne Martin
 - [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/) by Microsoft
+- [Designing Data-Intensive Applications notes](https://github.com/keyvanakbary/learning-notes/blob/master/books/designing-data-intensive-applications.md) by Keyvan Akbari
 
 ### License
 This content is licensed under an [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0).
@@ -95,3 +100,4 @@ Here are some things that I've found helpful throughout my career:
 
 Here are some useful resources to review when preparing for an interview:
 - **Mid/Senior folks:** [common cache types](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one)
+- **Senior folks:** [notes on the CAP theorem](https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html), [the raft consensus algorithm](https://raft.github.io/), [how Twitter uses Redis _(long)_](https://highscalability.com/how-twitter-uses-redis-to-scale-105tb-ram-39mm-qps-10000-ins/)
