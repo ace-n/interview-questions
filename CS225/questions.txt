@@ -21,7 +21,7 @@
 20=Why is a full tree not necessarily a complete tree?
 21=What is a dictionary?
 22=How long should tree traversals take?
-23=In a traversal, how many times is each node visited?
+23=In a binary tree traversal, how many times is each node visited?
 24=What are the four types of traversals?
 
 [binarytrees]
@@ -85,7 +85,7 @@
 9=What is the height of a heap in relation to the amount of data it contains?
 10=How do we insert something into a heap?
 11=What is the process of heapifying?
-12=When using an unsorted linked list, how fast are the two main priority queue operations (insert/remove)?
+12=IGNORE
 13=What is the algorithm for removeMin() in a heap?
 14=What are the three methods of building heaps?
 15=Out of the three heap building methods, which one is the fastest? How fast is it?
