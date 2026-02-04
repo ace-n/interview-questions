@@ -29,12 +29,12 @@ _Caveat: most of this advice is geared towards junior/"new grad" interviews. Mor
 >
 > Review the following `CS241` sections:
 > - quiz4-part1
-> - quiz4-part2
+> - ~~quiz4-part2~~
 > - quiz6-deadlock
 > - quiz6-virtualMemory
 > - quiz7-networking1
 > - quiz7-networking3 _(ignore `getaddrinfo()` stuff)_
-> - quiz7-scheduling
+> - ~~quiz7-scheduling~~
 > - quiz8-raid
 > - final_misc _(ignore C-specific stuff)_
 >

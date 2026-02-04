@@ -122,7 +122,7 @@
 1=What are graphs (the simplest definition)?
 2=What is different about a directed graph vs. a non-directed graph?
 3=What is the vertex cover problem, and what complexity class is it in?
-4=What is the degree of a node N?
+4=In an undirected graph, what is the degree of a node N?
 5=What is a path?
 6=What is the length of a path? What is it *not*?
 7=What is a simple graph?

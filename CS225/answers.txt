@@ -152,12 +152,13 @@
 31A=an edge leading to an already-visited vertex
 32A=they form a spanning tree 
 33A=m is O(n)
+edges is O(vertices)
 34A=a minimum total weight spanning tree
 35A=O(m)
 36A=it doesn't matter!
-37A=iteratively mark (as MST) the shortest n-1 edges that don't create cycles
+37A=sort edges by length, and iteratively mark (as MST) the shortest n-1 edges that don't create cycles
 38A=O(n + m lg n) for the two relevant PQ variants
-39A=mark the lowest-weight unmarked edges between a visited and unvisited node until no longer possible
+39A=mark the shortest "frontier" edge (discovery edge from visited to unvisited node) as MST until no longer possible
 40A=when it has negative cycles
 41A=use minimum path length from start node instead of minimum edge length
 42A=no

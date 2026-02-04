@@ -74,7 +74,7 @@
 53A=undefined
 
 [quiz4-part1]
-1A=a piece of code that cannot support multiple threads
+1A=a section of code that can only support a finite number of parallel threads
 2A=yes!
 3A=use a mutex
 4A=cleaning up after unlocked mutexes
